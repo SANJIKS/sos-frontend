@@ -1,0 +1,79 @@
+.headerNavs {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+@media screen and (max-width: 1280px) {
+  .headerNavs {
+    gap: 16px;
+  }
+}
+
+.navItem {
+  position: relative;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 400ms;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+  color: #00aeef;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.tab:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0E3862;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: inline-block;
+  background: white;
+  white-space: nowrap;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px -6px rgba(24, 39, 75, 0.12), 0 10px 32px -4px rgba(24, 39, 75, 0.10);
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 12px;
+  color: #00aeef;
+  line-height: 26px;
+  text-decoration: none;
+  font-weight: 400;
+
+  &:hover {
+    color: #0E3862;
+  }
+}
+
+.activeItem {
+  color: #0E3862;
+}

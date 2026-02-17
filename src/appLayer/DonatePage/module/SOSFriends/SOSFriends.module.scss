@@ -1,0 +1,85 @@
+.sosFriends {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h3 {
+      color: #00AEEF;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 46px;
+    }
+
+    p {
+      color: #0E3862;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+  }
+
+  .friendsSwiper {
+    padding: 0 0 0 0;
+  }
+
+
+  .allReviews {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: #00AEEF;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  :global {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #00AEEF;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #00AEEF;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .title {
+      h3 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .cardTitle {
+      gap: 8px;
+    }
+    .friendsSwiper {
+      padding: 0 0 0 0;
+    }
+    :global {
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+}

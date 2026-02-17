@@ -1,0 +1,19 @@
+.stages2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* --- ДОБАВЬТЕ ЭТОТ КОД В КОНЕЦ ФАЙЛА --- */
+@media (max-width: 768px) {
+  .stages2 {
+    grid-template-columns: 1fr; // 1 колонка вместо 2
+    gap: 20px;
+    padding: 0;
+  }
+}

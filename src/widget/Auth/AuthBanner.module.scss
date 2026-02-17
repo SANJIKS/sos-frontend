@@ -1,0 +1,40 @@
+.authBanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  max-width: 690px;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+
+  .authBannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 52px;
+  }
+
+  .title {
+    display: flex;
+    width: 605.99px;
+    padding: 37.74px 40.86px 80.61px 47.85px;
+    flex-direction: column;
+    align-items: flex-start;
+    //text-align: justify;
+    background-image: url("/image/auth/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--System-Colors-Web-color-secondary, #F04E69);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: var(--font-weight-bold, 700);
+    line-height: var(--heading-line-height-heading-xl, 52px); /* 111.538% */
+    border-radius: 40px ;
+  }
+}

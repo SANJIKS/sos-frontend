@@ -1,0 +1,59 @@
+
+$active-color: #E31E24;
+$inactive-color: #E0E0E0;
+
+.progressBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin:  auto;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: $inactive-color;
+  z-index: 1;
+}
+
+.lineActive {
+  height: 100%;
+  background-color: $active-color;
+  transition: width 0.4s ease-in-out;
+}
+
+.step {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .stepCircle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid $inactive-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $inactive-color;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &.active {
+    .stepCircle {
+      background-color: $active-color;
+      border-color: $active-color;
+      color: #fff;
+    }
+  }
+}

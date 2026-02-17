@@ -1,0 +1,122 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    color: #f04e69;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+
+  p {
+    color: #1c1c1c;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+
+.contentFond {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.missionFond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 78px 22px 0 rgba(0, 0, 0, 0), 
+              0 50px 20px 0 rgba(0, 0, 0, 0.01),
+              0 28px 17px 0 rgba(0, 0, 0, 0.05), 
+              0 12px 12px 0 rgba(0, 0, 0, 0.09),
+              0 3px 7px 0 rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #f04e69;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 128.571% */
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: #1c1c1c;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    gap: 40px;
+
+    .title {
+      gap: 6px;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px; /* 127.273% */
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+      }
+    }
+
+    .contentFond {
+      gap: 20px;
+
+      .missionFond {
+        padding: 12px 0;
+
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 28px; /* 127.273% */
+          padding-bottom: 12px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px; /* 133.333% */
+          padding-bottom: 18px;
+        }
+      }
+    }
+  }
+}
+

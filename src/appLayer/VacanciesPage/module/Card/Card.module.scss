@@ -1,0 +1,102 @@
+.card {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #FFF;
+  gap: 15px;
+  box-shadow: 0 45px 13px 0 rgba(0, 0, 0, 0.00), 0 29px 12px 0 rgba(0, 0, 0, 0.01), 0 16px 10px 0 rgba(0, 0, 0, 0.05), 0 7px 7px 0 rgba(0, 0, 0, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      color: #1C325D;
+      gap: 20px;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #1C325D;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+     p {
+       color: #81BC70;
+       font-size: 14px;
+       font-style: normal;
+       font-weight:  400;
+       line-height:  22px;
+     }
+  }
+  h3 {
+    color:  #0E3862;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  p {
+    color: #60708E;
+    font-size:  16px;
+    font-style: normal;
+    font-weight:  400;
+    line-height:  26px;
+    text-align: left;
+  }
+  button {
+    display: flex;
+    padding:6px  10px;
+    justify-content: center;
+    align-items: center;
+    color:  #FFF;
+    font-size:  22px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    line-height:  28px;
+    border-radius: 14px;
+    background:  #F04E69;
+    border: none;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 20px;
+    border-radius: 40px;
+    .nav {
+      flex-direction: column;
+      gap: 5px;
+      span {
+        justify-content: space-between;
+        width: 100%;
+        p {
+          font-size: 12px;
+        }
+      }
+
+    }
+    h3  {
+      font-size: 18px;
+      font-weight: 600;
+      line-height:  24px;
+      text-align: left;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height:  22px;
+    }
+    button {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+
+  @media (max-width: 1200px) {
+    .authBanner {
+      display: none;
+    }
+  }
+}
+
+.authCodeCheck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 72px;
+  gap: 24px;
+
+  @media (max-width: 1200px) {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  &Title {
+    color: #0E3862;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  &Description {
+    color: #0E3862;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &Input {
+    position: relative;
+
+    input {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+    }
+
+    &CodeList {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      justify-content: center;
+
+      @media (max-width: 1335px) {
+        gap: 16px;
+      }
+
+      @media (max-width: 450px) {
+        gap: 10px;
+      }
+
+      .codeItem {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid #D3E0FE;
+        pointer-events: none;
+        text-align: center;
+        color: #2E3139;
+        font-size: 14px;
+        font-weight: 400;
+
+        @media (max-width: 450px) {
+          width: 40px;
+          height: 40px;
+        }
+
+        &:focus,
+        &:active {
+          outline: 1px solid #4A4391 !important;
+        }
+
+        &Error {
+          border-color: #D91B1B !important;
+          pointer-events: all;
+        }
+
+        &Success {
+          border-color: #008F11 !important;
+        }
+
+        &Active {
+          pointer-events: all;
+          animation: blink 1500ms infinite;
+        }
+      }
+    }
+  }
+
+  &Button {
+    margin-bottom: 32px;
+  }
+
+  &Resend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      color: #425583;
+      font-size: 14px;
+      font-weight: 400;
+
+      span {
+        color: #4A4391;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .authCodeCheckButton {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: #D3E0FE;
+    color: #2E3139;
+  }
+  to {
+    border-color: #4A4391;
+    color: #4A4391;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+}

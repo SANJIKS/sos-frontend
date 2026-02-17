@@ -1,0 +1,29 @@
+// .locationIcon > rect:hover,
+// .locationIcon > rect:focus,
+// .locationIcon > path:hover > rect {
+//     transition: none;
+//     fill: #00AEEF;
+//     cursor: pointer;
+// }
+.locationIcon:hover{
+  transition: 0.3s;
+  rect {
+    fill: #00AEEF;
+    cursor: pointer;
+  }
+  path {
+    cursor: pointer;
+  }
+}
+.g {
+  position: relative;
+}
+.kyrgyzstanMap__kyrgyzstan {
+  transition: 0.3s;
+  fill: #00AEEF;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.kyrgyzstanMap {
+  position: relative;
+}

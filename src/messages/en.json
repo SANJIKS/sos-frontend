@@ -1,0 +1,997 @@
+{
+  "main": {
+    "title": "Main page",
+    "description": "Welcome to the main page"
+  },
+  "mainPage": {
+    "banner": {
+      "title": "Give a child the childhood they dream of",
+      "subtitle": "Make a donation today and give hope",
+      "donateButton": "Donate now",
+      "learnMore": "Learn more",
+      "supportText": "Your support is very important to us!"
+    }
+  },
+  "programmePage": {
+    "banner": {
+      "title": "Our Programs",
+      "description": "Choose a program that resonates with you and learn how you can help",
+      "supportText": "Your support is very important to us!"
+    },
+    "blocks": {
+      "noData": "No data",
+      "learnMore": "Learn more"
+    }
+  },
+  "ourProgram": {
+    "title": "Our Programs",
+    "subtitle": "We create a family, care and a chance for the future for every child",
+    "cards": [
+      {
+        "title": "Alternative Care"
+      },
+      {
+        "title": "Mental Health"
+      },
+      {
+        "title": "Psychological Support"
+      }
+    ],
+    "learnMore": "Learn more"
+  },
+  "achievements": {
+    "title": "Our Achievements",
+    "items": [
+      {
+        "title": "20+ regions",
+        "description": "We work across the country to ensure no child is left without support"
+      },
+      {
+        "title": "500+ children",
+        "description": "Helped to find a family and provide access to education and development"
+      },
+      {
+        "title": "1000+ donors",
+        "description": "Thanks to your support, we scale programs and launch new campaigns"
+      }
+    ],
+    "learnMore": "Learn more about the foundation"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Thank you for your trust"
+  },
+  "vacanciesPage": {
+    "banner": {
+      "title": "Join SOS Children's Villages Kyrgyzstan",
+      "subtitle": "Change lives and build the future"
+    },
+    "current": "Current vacancies",
+    "empty": "No vacancies",
+    "card": {
+      "deadline": "Deadline: {date}",
+      "apply": "Apply"
+    }
+  },
+  "faqPage": {
+    "banner": {
+      "title": "Frequently Asked",
+      "description": "Answers to key questions about the foundation's work and donations",
+      "supportText": "Your support is very important to us!"
+    },
+    "feedback": {
+      "title": "We greatly value your opinion!",
+      "description": "Please describe your question in the form below — we will contact you and provide a detailed response within the working day"
+    },
+    "faq": [
+      {"index": "01", "title": "How can I make a one-time donation?", "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment — and receive a thank you letter by email."},
+      {"index": "02", "title": "How to set up a regular donation?", "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment — and receive a thank you letter by email."},
+      {"index": "03", "title": "How can I make a one-time donation?", "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment — and receive a thank you letter by email."},
+      {"index": "04", "title": "How can I make a one-time donation?", "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment — and receive a thank you letter by email."}
+    ]
+  },
+  "ourFriendsPartners": {
+    "civicOrganizations": "Civil society organizations",
+    "governmentAgencies": "Government agencies",
+    "internationalOrganizations": "International organizations",
+    "foreignGovernments": "Foreign governments",
+    "otherOrganizations": "Other organizations",
+    "cta": {"title": "Want to contribute?", "button": "Become a partner"},
+    "form": {
+      "title": "Become a partner",
+      "description": "Fill out the form and we will contact you to discuss partnership opportunities."
+    }
+  },
+  "ourFriendsCorporateDonors": {
+    "title": "Corporate Donors",
+    "cta": {"title": "Want to become a corporate donor?", "button": "Become a corporate donor"},
+    "form": {
+      "title": "Become a corporate donor",
+      "description": "Fill out the form and we will contact you to discuss the format of long-term support for SOS Children's Villages Kyrgyzstan and joint charitable initiatives."
+    }
+  },
+  "ourFriendsForm": {
+    "title": "Become a corporate donor",
+    "description": "Fill out the form and we will contact you to discuss the format of long-term support for SOS Children's Villages Kyrgyzstan and joint charitable initiatives."
+  },
+  "ourFriendsPage": {
+    "corporateDonors": "Corporate donors",
+    "governmentBodies": "Government bodies",
+    "civilOrganizations": "Civil Organizations",
+    "internationalOrganizations": "International Organizations",
+    "foreignGovernments": "Foreign Governments",
+    "otherOrganizations": "Other Organizations",
+    "cta": {
+      "title": "Want to contribute?",
+      "button": "Become a partner"
+    }
+  },
+  "ourFriendsFriendsPage": {
+    "banner": {
+      "title": "Become a SOS Friend",
+      "subtitle": "Community of caring hearts",
+      "donateButton": "Donate now"
+    },
+    "content": {
+      "partnersTitle": "Our Partners",
+      "friendsTitle": "Stories of our friends",
+      "joinUsText": "Join us!\nWrite your review!"
+    },
+    "carousel": {
+      "loading": "Loading...",
+      "error": "Error loading partners"
+    },
+    "form": {
+      "title": "Become a SOS Friend",
+      "description": "Fill out the form and we will contact you. Join our community of caring hearts!"
+    }
+  },
+  "reviewModal": {
+    "title": "Write your testimonial",
+    "firstName": {
+      "label": "First name",
+      "placeholder": "Your first name"
+    },
+    "lastName": {
+      "label": "Last name",
+      "placeholder": "Your last name"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "example@gmail.com"
+    },
+    "photo": {
+      "label": "Upload a Personal Photo",
+      "choose": "Choose",
+      "fileSelected": "File selected"
+    },
+    "message": {
+      "label": "Your message",
+      "placeholder": "Type your message here. Min length 10 characters"
+    },
+    "privacy": {
+      "label": "I agree for",
+      "link": "Privacy Policy"
+    },
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Review successfully submitted!",
+    "errors": {
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "contacts": {
+    "banner": {
+      "title": "Contacts",
+      "subtitle": "Corporate Foundation ‘SOS Children's Villages Kyrgyzstan’",
+      "address": "Abdymomunov St., 123, Bishkek",
+      "email": "info@soskg.org",
+      "phone": "+996 (312) 123-456"
+    },
+    "feedback": {
+      "title": "We greatly value your opinion!",
+      "description": "Please describe your question in the form below — we will contact you and provide a detailed response within the working day"
+    },
+    "list": {
+      "title": "How to contact us",
+      "common": {
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "workingHours": "Working hours"
+      },
+      "nationalOffice": {
+        "title": "National Coordination Office",
+        "address": "Isanova St. 94/3",
+        "addressFull": "Isanova St. 94/3, Bishkek",
+        "working": "09:00-18:00"
+      },
+      "bishkekVillage": {
+        "title": "SOS Children's Village Bishkek",
+        "address": "Toktonalieva St. 137",
+        "addressFull": "Toktonalieva St. 137, Bishkek",
+        "working": "09:00-18:00"
+      },
+      "gmeinerComplex": {
+        "title": "Hermann Gmeiner Educational Complex",
+        "address": "Toktonalieva St. 137a",
+        "addressFull": "Toktonalieva St. 137a, Bishkek",
+        "working": "08:00-18:30"
+      },
+      "cholponAta": {
+        "title": "SOS Children's Village Cholpon-Ata",
+        "address": "Microdistrict 3, Osmonova St. 2",
+        "addressFull": "Microdistrict 3, Osmonova St. 2, Cholpon-Ata",
+        "working": "09:00-18:00"
+      }
+    },
+    "feedbackForm": {
+      "name": {"label": "Name*", "placeholder": "Your name"},
+      "email": {"label": "Email*", "placeholder": "example@gmail.com"},
+      "message": {"label": "Your message*", "placeholder": "Enter your message here"},
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Message sent",
+      "errors": {
+          "messageMin": "Message must be at least 10 characters",
+        "general": "An unexpected error occurred"
+      }
+    }
+  },
+  "nav": {
+    "about": "Who we are",
+    "programs": "Programs",
+    "supportChildren": "Support children",
+    "support-children": "Support children",
+    "news": "News",
+    "ourFriends": "Our friends",
+    "history": "Stories",
+    "contacts": "Contacts",
+    "vacancies": "Vacancies",
+    "childProtectionPolicy": "Child Protection Policy",
+    "faq": "Frequently Asked Questions",
+    "foundationHistory": "Foundation history",
+    "partners": "Partners",
+    "becomeFriend": "Become a Friend of SOS",
+    "corporateDonors": "Corporate Donors",
+    "fond": "About"
+  },
+  "logoFirst": "SOS Children’s",
+  "logoSecond": "Villages",
+  "country": "Kyrgyzstan",
+  "login": "Login",
+  "logout": "Logout",
+  "donate": "Donate",
+  "footer": {
+    "whoWeAre": "Who we are",
+    "foundationHistory": "Foundation history",
+    "aboutFoundation": "About the foundation",
+    "support": "Support",
+    "donate": "Donate",
+    "subscription": "Regular subscription",
+    "donationFaq": "Donation FAQ",
+    "contactsPolicy": "Contacts and policy",
+    "contacts": "Contacts",
+    "vacancies": "Vacancies",
+    "childProtectionPolicy": "Child Protection Policy"
+  },
+  "map": {
+    "title": "Our Locations",
+    "subtitle": "Our activities cover all 20 regions of Kyrgyzstan"
+  },
+  "payment": {
+    "stages": {
+      "1": {
+        "title": "Choose your desired donation amount",
+        "subtitle": "Or specify another amount",
+        "buttonText": "Continue"
+      },
+      "2": {
+        "title": "Enter personal information",
+        "subtitle": "Fill in all fields to continue",
+        "buttonText": "Continue"
+      },
+      "3": {
+        "title": "Payment",
+        "subtitle": "Please wait while the redirection process completes.",
+        "buttonText": "Loading"
+      }
+    },
+    "stages1": {
+      "placeholder": "Enter amount",
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
+    "stages2": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name"
+        },
+        "surname": {
+          "label": "Surname",
+          "placeholder": "Enter surname"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter phone"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter email"
+        }
+      }
+    },
+    "agreement": "I agree to the terms of",
+    "agreementLink1": "Donation Agreement",
+    "agreementLink2": "Personal Data Processing"
+  },
+  "form": {
+    "title": "Have questions? Write to us!",
+    "description": "If you have any questions or need additional information, our team is ready to help! Don't hesitate to contact us with your questions, and we will respond to you as soon as possible. Your curiosity and interaction are very important to us, as we work together to support children and families. Feel free to ask questions, and let's make a positive impact together!",
+    "button": "Contact us"
+  },
+  "socialMedia": {
+    "title": "We are on social media"
+  },
+  "sosFriends": {
+    "title": "SOS Friends",
+    "subtitle": "Stories of our friends",
+    "allReviews": "All reviews",
+    "friends": [
+      {
+        "name": "Ernis",
+        "location": "Batken",
+        "quote": "Found like-minded people, I'm glad I became part of the club"
+      },
+      {
+        "name": "Aisuluu",
+        "location": "Bishkek",
+        "quote": "Here I learned new things and gained confidence in myself. Thank you!"
+      },
+      {
+        "name": "Tilek",
+        "location": "Osh",
+        "quote": "The support program helped me prepare for university admission."
+      },
+      {
+        "name": "Maria",
+        "location": "Karakol",
+        "quote": "This is an incredible community where everyone is ready to help."
+      }
+    ]
+  },
+  "donatePage": {
+    "banner": {
+      "title": "Your support has incredible power!",
+      "subtitle": "We must do everything possible so that every child in Kyrgyzstan grows up in a caring family atmosphere."
+    },
+    "faq": [
+      {
+        "index": "01",
+        "title": "How can I make a one-time donation?",
+        "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment - and receive a thank you letter by email."
+      },
+      {
+        "index": "02",
+        "title": "How to set up a regular donation?",
+        "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment - and receive a thank you letter by email."
+      },
+      {
+        "index": "03",
+        "title": "How can I make a one-time donation?",
+        "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment - and receive a thank you letter by email."
+      },
+      {
+        "index": "04",
+        "title": "How can I make a one-time donation?",
+        "description": "To make a one-time donation, click the 'Donate now' button in the site header or in the 'Help right now' section. Choose an amount or enter your own, provide contact details and payment method, confirm payment - and receive a thank you letter by email."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the main questions about donations, foundation programs and website operation"
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "button": "Learn more",
+    "stories": [
+      {
+        "title": "Nurkamal - new family",
+        "description": "After losing her parents, Nurkamal found a foster family in the SOS village and smiles again"
+      },
+      {
+        "title": "Emil - path to knowledge",
+        "description": "Thanks to your support, Emil was able to continue his studies and dreams of becoming an engineer"
+      },
+      {
+        "title": "Aigerim - the power of dreams",
+        "description": "When Aigerim came to us, she was afraid of the whole world. Now she dances on the school stage"
+      },
+      {
+        "title": "Another story",
+        "description": "Description for another wonderful success story."
+      }
+    ]
+  },
+  "donationImpact": {
+    "title": "What your donation brings",
+    "cards": [
+      {
+        "sum": 200,
+        "title": "Hot meal for one child"
+      },
+      {
+        "sum": 500,
+        "title": "Weekly grocery package for family"
+      },
+      {
+        "sum": 1000,
+        "title": "Set of school supplies"
+      },
+      {
+        "sum": 2000,
+        "title": "Month of developmental clubs"
+      }
+    ]
+  },
+  "childProtectionPolicy": {
+    "title": "Child Protection Policy",
+    "subtitle": "SOS CHILDREN'S VILLAGES ORGANIZATION POLICY ON PROTECTING CHILDREN FROM CRUEL TREATMENT CHILD SAFETY CONCERNS EVERYONE",
+    "sections": [
+      {
+        "title": "Our Principles",
+        "content": "SOS Children's Villages organization is committed to creating and maintaining a caring and safe environment for children, which helps realize the organization's core values and allows it to combat child abuse and exploitation, as well as prevent such cases. We categorically condemn all forms of child abuse and exploitation, both within and outside the organization, and react to all confirmed and alleged cases or attempts of abuse in accordance with the nature of the child's rights violation. The organization's efforts are aimed at providing mechanisms to raise awareness of this problem, prevent it, and facilitate the registration of complaints and adequate responses to them. Such mechanisms include various measures, from staff development activities, including training and counseling, to temporary suspension from duty, dismissal, or legal proceedings."
+      },
+      {
+        "title": "SCOPE",
+        "content": "SOS Children's Villages organization is guided by the provisions of the UN Convention on the Rights of the Child and the KR Children's Code: ensuring the child's interests is a priority for us. Every child has the right to fully develop their potential, receive quality education, participate in decisions affecting their interests, and be protected from discrimination. Each of us bears responsibility for protecting children from all forms of abuse, neglect of their needs, exploitation, violence, and discrimination. Special attention in this document is given to creating internal mechanisms within SOS Children's Villages for preventing child abuse and responding to it."
+      },
+      {
+        "title": "GOALS OF THE CHILD PROTECTION POLICY AGAINST CRUEL TREATMENT:",
+        "content": "• preventing cases of cruel treatment and reducing their number (both violence among children and violence against children by adults) within SOS Children's Villages organization;\n• explaining to children their rights and their active role in protecting children from cruel treatment;\n• assisting staff directly interacting with children in applying the skills necessary to support each child's development and protect their rights;\n• forming an active protection system so that all children and adults in the organization are safe and protected."
+      },
+      {
+        "title": "Contacts",
+        "content": "We ask you to be our partners in ensuring that children remain in a safe, caring, and protected environment overall. If you have personally encountered abuse, violence, or injustice in SOS Children's Villages, or if you know that injustice is being or has been committed against others, please contact our staff. Your courage to tell us about violence can help us prevent violence and injustice against children and improve our work to protect children from violence in the future!",
+        "contactInfo": {
+          "workingHours": "Our staff can be contacted Monday to Friday from 9:00 to 18:00",
+          "phones": {
+            "bishkek": "In SOS-Children's Village Bishkek Tel.: (+996) 312 54-25-42 , (+996) 550-10-55-50",
+            "cholponAta": "In SOS-Children's Village Cholpon-Ata Tel.: (+996) 998-81-87-08"
+          },
+          "email": "You can also leave us a message via email: help.safeguard@soskyrgyzstan.kg at any time."
+        }
+      }
+    ]
+  },
+  "donationForm": {
+    "title": "Your donations will help children without parental care to find a safe and happy childhood ♥",
+    "subscription": {
+      "title": "Subscribe to monthly donations",
+      "description": "Regular donations allow us to plan long-term projects and give hope every month, quarter or year",
+      "placeholder": "Enter amount",
+      "button": "Subscribe"
+    },
+    "comparison": {
+      "left": {
+        "title": "For you",
+        "description": "A cup of coffee in the morning"
+      },
+      "right": {
+        "title": "For children",
+        "description": "Hot meal for one child"
+      }
+    },
+    "tariffs": ["200", "500", "1000", "2000"],
+    "dynamicTexts": {
+      "200": {
+        "left": {
+          "title": "For you",
+          "description": "A cup of coffee in the morning"
+        },
+        "right": {
+          "title": "For children",
+          "description": "Hot meal for one child"
+        }
+      },
+      "500": {
+        "left": {
+          "title": "For you",
+          "description": "Movie ticket"
+        },
+        "right": {
+          "title": "For children",
+          "description": "Weekly grocery package for family"
+        }
+      },
+      "1000": {
+        "left": {
+          "title": "For you",
+          "description": "Set of school supplies"
+        },
+        "right": {
+          "title": "For children",
+          "description": "Full set of educational materials"
+        }
+      },
+      "2000": {
+        "left": {
+          "title": "For you",
+          "description": "Family dinner at a cafe"
+        },
+        "right": {
+          "title": "For children",
+          "description": "Month of developmental club classes"
+        }
+      }
+    }
+  },
+  "newsPage": {
+    "banner": {
+      "title": "News",
+      "description": "Stay updated with important fund events",
+      "supportText": "Your support is very important to us!"
+    },
+    "newsList": {
+      "search": {
+        "placeholder": "Search..."
+      },
+      "sort": { 
+        "label": "Sort by:",
+        "options": [
+          { "label": "Newest", "value": "true" },
+          { "label": "Oldest", "value": "false" }
+        ]
+      },
+      "loading": "Loading news...",
+      "empty": "No news",
+      "defaultCategory": "News"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, the requested page does not exist or has been moved.",
+    "buttonText": "Return to Home"
+  }
+  ,
+  "foundationHistory": {
+    "title": "Foundation history",
+    "subtitle": {
+      "part1": "29 years of care and love: the story of SOS Children's Villages",
+      "part2": "Kyrgyzstan"
+    },
+    "introduction": {
+      "title": "Introduction:",
+      "description": "Since 1996, we have been creating a caring home for every child in Kyrgyzstan. Inspired by Hermann Gmeiner's idea, we follow a path where love, family and safety are not just words, but a reality for thousands of children.",
+      "card": {
+        "title": "How it all began: the global SOS movement",
+        "line1": "Hermann Gmeiner is the founder who created the first SOS Children's Village in 1949 in Austria.",
+        "line2": "He believed: 'Those who help children today build a better world for tomorrow.'"
+      }
+    },
+    "principles": {
+      "title": "Key SOS principles:",
+      "items": [
+        {
+          "title": "Mother: Every child has a caring parent",
+          "description": "An SOS mother builds a close relationship with the child entrusted to her and provides the necessary protection, love and care. As a professional employee, the SOS mother lives with the children, is engaged in their development and independently runs the household. She knows and respects the history of each child, his social and cultural roots, religious beliefs and feelings."
+        },
+        {
+          "title": "Brothers and Sisters: Family ties are formed naturally",
+          "description": "Girls and boys of different ages live together as brothers and sisters with their siblings in one SOS family. Together with their SOS mother, these children build family ties that continue and are maintained throughout life."
+        },
+        {
+          "title": "Home: Every family creates its own home",
+          "description": "Every SOS family has their own home - a house with its own characteristics, rhythm of life and household. Under its roof, children truly feel part of a family and therefore feel protected. Children grow and learn together, share common responsibilities, and share the joys and sorrows of everyday life."
+        },
+        {
+          "title": "Village: The SOS family is part of society",
+          "description": "SOS families live nearby, share experiences, support and help each other, creating an atmosphere of care and mutual understanding, in which children feel happy. Thus, every child learns to participate in the life of his family and village, and in general, SOS families act as a single group contributing to the development of the local community."
+        }
+      ],
+      "footer": "Today, the SOS network operates in more than 130 countries, helping more than a million children and families."
+    },
+    "appearance": {
+      "title": "The appearance of SOS in Kyrgyzstan",
+      "description": "In 1996, the country was just beginning work on reforming orphanages. We were the first to propose a family alternative — where every child lives in care and respect, in a real family.",
+      "subtitle": "Key events:",
+      "cards": [
+        "Opening of the SOS representation in Kyrgyzstan",
+        "Launch of the SOS Children's Village in Bishkek",
+        "Opening of the village in Cholpon-Ata",
+        "Launch of family strengthening and youth support programs",
+        "25th anniversary of the foundation"
+      ]
+    },
+    "success": {
+      "title": "29 years with children and for children",
+      "workYears": "Over the years:",
+      "list": [
+        "More than 800 children were raised in SOS families",
+        "20+ social programs implemented",
+        "Thousands of families received support"
+      ],
+      "quote": {
+        "title": "Our success is the trust, care and strength with which we nurture the future of Kyrgyzstan",
+        "caption": "from the address of the National Director L. Dzhuraeva"
+      }
+    },
+    "programs": {
+      "title": "The appearance of SOS in Kyrgyzstan",
+      "description": "Today we not only maintain the SOS model, but also actively participate in development:",
+      "list": [
+        "Deinstitutionalization programs",
+        "Reform of child protection systems",
+        "Vocational training and support for graduates"
+      ]
+    }
+  },
+  "searchPage": {
+    "title": "Site Search",
+    "subtitle": "Find the information you need about our programs, news and opportunities",
+    "placeholder": "Enter search query...",
+    "loading": "Searching...",
+    "initial": {
+      "title": "Start Searching",
+      "description": "Enter keywords in the search field to find the information you are looking for"
+    },
+    "noResults": {
+      "title": "No Results Found",
+      "description": "Try changing your query or using different keywords"
+    },
+    "results": {
+      "title": "Search Results",
+      "count": "found"
+    },
+    "types": {
+      "news": "News",
+      "program": "Programs",
+      "vacancy": "Vacancies",
+      "about": "About Us",
+      "page": "Page"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page"
+    }
+  },
+  "fondPage": {
+    "banner": {
+      "title": "About the SOS Children's Villages Kyrgyzstan Foundation"
+    },
+    "introduction": {
+      "title": "Introduction:",
+      "description": "The SOS Children's Villages Kyrgyzstan Foundation is part of an international humanitarian movement based on a simple but powerful idea: every child should grow up in a loving family.",
+      "ourMission": {
+        "title": "Our Mission",
+        "description": "We create long-term, stable and caring conditions for children left without parental care, and support families in crisis to prevent separation from children."
+      },
+      "mission": {
+        "title": "Foundation's Mission:",
+        "text": "Every child deserves a family, love, respect and safety."
+      }
+    },
+    "doing": {
+      "title": "What We Do",
+      "description": "Today we not only preserve the SOS model, but also actively participate in development:",
+      "items": [
+        "SOS Children's Villages in Bishkek and Cholpon-Ata",
+        "Crisis and transitional homes",
+        "Family strengthening program",
+        "Support for graduates",
+        "Training of SOS parents",
+        "Psychological and social assistance"
+      ]
+    },
+    "ourModel": {
+      "title": "Our Model: SOS Family",
+      "description": "Each SOS family lives in a separate house. An SOS parent lives with the children - a trained adult who becomes their real guardian and friend.",
+      "items": [
+        "SOS parent - care, attention, stability",
+        "Brothers and sisters - maintaining bonds",
+        "Family home - own comfort and life",
+        "Village - community and support"
+      ]
+    },
+    "results": {
+      "title": "Why It Works",
+      "description": "Research and practice show that children growing up in a family environment develop better, feel more confident, and socialize more successfully.",
+      "resultsLabel": "Results:"
+    },
+    "member": {
+      "title": "Part of the International Movement",
+      "description": "We are part of SOS Children's Villages International, operating in more than 130 countries. At the core is the spirit of the UN Convention on the Rights of the Child and respect for the culture of each country."
+    }
+  },
+  "detailedProgramPage": {
+    "about": {
+      "title": "About the Program"
+    },
+    "howItWorks": {
+      "title": "How the Program Works"
+    },
+    "video": {
+      "title": "About the Program"
+    }
+  },
+  "supportChildrenPage": {
+    "banner": {
+      "title": "Support Children",
+      "description": "Every step you take is a chance for a child to have a happy future",
+      "supportText": "Your support is very important to us!"
+    },
+    "options": {
+      "title": "Other ways to help us:",
+      "corporate": "Become a corporate donor",
+      "subscription": "Subscribe to monthly donations"
+    },
+    "contribution": {
+      "title": "Make your contribution right now",
+      "learnMore": "Learn more"
+    },
+    "requisites": {
+      "title": "Requisites",
+      "mainDescription": "Requisites of PF \"SOS Children's Villages Kyrgyzstan\"",
+      "otherCities": "Requisites of other cities",
+      "qrTransfer": "Transfer via QR",
+      "loading": "Loading...",
+      "error": "Error"
+    }
+  },
+  "locationModal": {
+    "closeButton": "Close"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "forgotPassword": "Forgot password?",
+      "submitButton": "Login",
+      "submitButtonLoading": "Logging in...",
+      "noAccount": "Don't have an account yet?",
+      "registerLink": "Register",
+      "agreement": "By continuing to use the service, you agree to the",
+      "privacyPolicy": "privacy policy",
+      "userAgreement": "user agreement"
+    },
+    "register": {
+      "title": "Registration",
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter email"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter phone number"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Enter password"
+      },
+      "submitButton": "Register",
+      "submitButtonLoading": "Registering...",
+      "hasAccount": "Already registered?",
+      "loginLink": "Login",
+      "agreement": "By continuing to use the service, you agree to the",
+      "privacyPolicy": "privacy policy",
+      "userAgreement": "user agreement"
+    },
+    "forgotPassword": {
+      "title": "Forgot password?",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "submitButton": "Send",
+      "rememberPassword": "Remember password?",
+      "loginLink": "Login to account",
+      "agreement": "By continuing to use the service, you agree to the",
+      "privacyPolicy": "privacy policy",
+      "userAgreement": "user agreement"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "oldPassword": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "newPassword": {
+        "label": "New Password",
+        "placeholder": "Enter new password"
+      },
+      "confirmPassword": {
+        "label": "Confirm New Password",
+        "placeholder": "Confirm new password"
+      },
+      "submitButton": "Change Password"
+    },
+    "profile": {
+      "personalData": "Personal Data",
+      "subscription": "Subscription and Donation",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "changePassword": "Change Password",
+      "logout": "Logout",
+      "subscriptionHistory": {
+        "date": "Date and time:",
+        "type": "Type:",
+        "receipt": "Receipt:",
+        "amount": "Amount:",
+        "status": "Status:",
+        "downloadReceipt": "Download receipt",
+        "oneTime": "One-time",
+        "successful": "Successful",
+        "subscriptionStatus": "Subscription status:",
+        "subscription": "Subscription:",
+        "stop": "Stop ",
+        "resume": "Resume "
+      }
+    },
+    "messages": {
+      "loginSuccess": "Login successful!",
+      "registrationSuccess": "Registration successful!",
+      "passwordResetSent": "We sent a password recovery link to your email!",
+      "passwordChanged": "Password changed successfully!",
+      "error": "Error"
+    }
+  },
+  "privacyPolicy": {
+    "title": "PERSONAL DATA PROCESSING POLICY",
+    "subtitle": "OF THE PUBLIC FOUNDATION «SOS - CHILDREN'S VILLAGES OF KYRGYZSTAN»",
+    "chapter1": {
+      "title": "CHAPTER 1. GENERAL PROVISIONS",
+      "p1": "1.1. This Personal Data Processing Policy (hereinafter — Policy) defines the activities of the Public Foundation «SOS - Children's Villages of Kyrgyzstan» (hereinafter — Operator) represented by Director Dzhuraeva L.E., regarding the collection, processing and protection of personal data that may be obtained from personal data subjects — Website users, donors, event participants and other persons interacting with the Operator.",
+      "p2": "1.2. The Policy is developed taking into account the requirements of the Constitution of the Kyrgyz Republic, Law of the Kyrgyz Republic No. 58 dated April 14, 2008 «On Personal Data» (hereinafter — Personal Data Law), Law of the Kyrgyz Republic No. 318 dated December 19, 2009 «On Charitable Activities and Charitable Organizations», as well as other regulatory legal acts of the Kyrgyz Republic.",
+      "p3": "1.3. The following terms are used in this Policy:",
+      "terms": {
+        "donors": "Donors — persons making voluntary donations and other non-prohibited by law receipts to achieve the statutory goals of the Operator.",
+        "beneficiaries": "Beneficiaries — individuals constituting the target groups of the Operator's activities (orphans and children left without parental care; young people from among them; children and young people at risk of losing parental care; citizens in difficult life situations; as well as members of their families).",
+        "operator": "Operator — a legal entity that collects, processes and protects personal data.",
+        "site": "Website — the Operator's information resource on the Internet, accessible at the address:",
+        "personalData": "Personal data — information relating to a specific or identifiable personal data subject, recorded on electronic, paper and (or) other material media.",
+        "users": "Website users — individuals visiting or using the Website, in respect of whom personal data processing is carried out.",
+        "subject": "Personal data subject — an individual to whom personal data relates.",
+        "specialCategories": "Special categories of personal data — data on health status, racial or ethnic origin, political views, religious or philosophical beliefs, sexual orientation and other data, the list of which is established by law.",
+        "blocking": "Blocking of personal data — temporary cessation of transfer, clarification, use and destruction of personal data for the period of verification.",
+        "crossBorder": "Cross-border transfer — transfer of personal data to holders located under the jurisdiction of other states."
+      },
+      "p4": "1.4. The Policy provisions apply to personal data obtained both before (within previously agreed conditions) and after the approval of this Policy.",
+      "p5": "1.5. This Policy comes into force from the moment of its approval and is valid indefinitely.",
+      "p6": "1.6. The Operator is the holder of a personal data array and has passed mandatory registration in the authorized state body for personal data."
+    },
+    "chapter2": {
+      "title": "CHAPTER 2. PRINCIPLES AND PURPOSES OF COLLECTION AND PROCESSING OF PERSONAL DATA",
+      "p1": "2.1. Personal data processing is carried out on the basis of the following principles:",
+      "principles": {
+        "rights": "respect for human and civil rights and freedoms;",
+        "legality": "legality and fairness;",
+        "confidentiality": "confidentiality of personal data;",
+        "minimization": "minimization of the volume of processed data;",
+        "nonMerging": "inadmissibility of combining personal data arrays collected for different and incompatible purposes;",
+        "security": "ensuring security of the individual, society and the state."
+      },
+      "p2": "2.2. Purposes of personal data processing:",
+      "purposes": {
+        "contracts": "execution of donation agreements;",
+        "donations": "acceptance and accounting of donations (online and offline);",
+        "accounting": "maintenance of accounting and tax reporting;",
+        "obligations": "fulfillment of the Operator's obligations to donors and beneficiaries;",
+        "information": "informing about the Operator's activities;",
+        "events": "conducting events and campaigns;",
+        "statistics": "maintaining statistics and analytics;",
+        "legislation": "fulfillment of requirements of the legislation of the Kyrgyz Republic;",
+        "improvement": "improving website operation and quality of service;",
+        "other": "other lawful purposes."
+      },
+      "p3": "2.3. To improve website operation, adapt materials and offers to user interests, ensure technical functioning, as well as for analytics, the Operator processes data on device IP addresses, browser history, device type, operating system, visit time, activity log files, «cookies» files and similar technologies, including data collected by Google Analytics, Yandex.Metrica, as well as the Salesforce system."
+    },
+    "chapter3": {
+      "title": "CHAPTER 3. LIST OF PROCESSED PERSONAL DATA",
+      "p1": "3.1. In relation to donors (individuals), the Operator processes:",
+      "donorData": {
+        "name": "surname, first name, patronymic;",
+        "phone": "contact phone number;",
+        "email": "email address;",
+        "address": "postal address;",
+        "payment": "payment details (to the extent necessary for conducting a transaction through the payment system, including partial bank card details)."
+      },
+      "p2": "3.2. In relation to Website users and social networks:",
+      "userData": {
+        "contacts": "contact data (phone, e-mail);",
+        "social": "information from social networks (subject to access provided by the subject);",
+        "actions": "data on actions on the Website;",
+        "technical": "IP address, browser history, «cookies» files;",
+        "sessions": "session information (date, time, duration);",
+        "logs": "activity log files;",
+        "public": "other information that the personal data subject makes publicly available."
+      },
+      "p3": "3.3. In relation to offline event participants:",
+      "offlineData": {
+        "name": "Full name;",
+        "contacts": "contact data;",
+        "donations": "information about donations (when made)."
+      },
+      "p4": "3.4. Processing of special categories of personal data, as well as data of minor beneficiaries, is allowed only with the written consent of the subject or his/her legal representative with enhanced security measures."
+    },
+    "chapter4": {
+      "title": "CHAPTER 4. PROCEDURE AND CONDITIONS FOR PERSONAL DATA PROCESSING",
+      "p1": "4.1. Personal data processing is carried out with the consent of the subject, except for cases provided by the legislation of the Kyrgyz Republic.",
+      "p2": "4.2. Transfer of personal data to third parties is allowed:",
+      "thirdParty": {
+        "payments": "for payment processing (payment system, bank);",
+        "storage": "for data storage and processing using cloud services (including Salesforce);",
+        "authorities": "to state bodies upon request on legal grounds."
+      },
+      "p3": "4.3. Cross-border data transfer is carried out subject to compliance with the requirements of the legislation of the Kyrgyz Republic, including transfer to countries providing adequate protection of personal data.",
+      "p4": "4.4. Processing includes: collection, storage, systematization, use, anonymization, transfer (including cross-border), blocking, deletion.",
+      "p5": "4.5. Upon written request of the subject, the Operator provides information about the existence and content of his/her personal data, purposes and legal grounds for processing, categories of recipients, storage periods and facts of cross-border transfer within no more than 7 calendar days. Information is provided free of charge; a fee may be charged only for material media within their cost."
+    },
+    "chapter5": {
+      "title": "CHAPTER 5. RIGHTS AND OBLIGATIONS OF THE PARTIES",
+      "p1": "5.1. The personal data subject has the right to:",
+      "subjectRights": {
+        "know": "know what data the Operator processes;",
+        "modify": "demand their modification, addition or deletion;",
+        "withdraw": "withdraw consent to processing;",
+        "info": "receive information about legal grounds, terms and purposes of processing, methods of processing, location of the Operator, persons with access, source of data receipt, terms of processing/storage, procedure for exercising rights, facts and countries of cross-border transfer;",
+        "copy": "receive copies of his/her personal data and demand their updating/correction;",
+        "block": "demand blocking of data for the verification period and/or destruction of data on grounds provided by law."
+      },
+      "p2": "5.2. The Operator is obliged to:",
+      "operatorDuties": {
+        "compliance": "process data in accordance with the legislation of the Kyrgyz Republic;",
+        "protection": "take measures to protect data;",
+        "access": "provide subjects with access to their data;",
+        "destruction": "destroy or anonymize data upon achieving the purposes of processing."
+      }
+    },
+    "chapter6": {
+      "title": "CHAPTER 6. MEASURES FOR PROTECTION OF PERSONAL DATA",
+      "p1": "6.1. The Operator applies organizational, legal and technical measures for data protection, including:",
+      "measures": {
+        "responsible": "appointment of a responsible person;",
+        "access": "restriction of employee access;",
+        "security": "use of antivirus tools and encryption;",
+        "backup": "backup;",
+        "control": "control of access to information systems."
+      }
+    },
+    "chapter7": {
+      "title": "CHAPTER 7. FINAL PROVISIONS",
+      "p1": "7.1. All issues not regulated by this Policy are regulated by the legislation of the Kyrgyz Republic.",
+      "p2": "7.2. The Policy is posted on the Website:",
+      "p3": "7.3. The Operator has the right to change the Policy without prior notice.",
+      "p4": "7.4. This Policy is valid indefinitely.",
+      "p5": "7.5. Contact information for inquiries:",
+      "contact": {
+        "address": "720001, Bishkek, Isanova St. 94/3, National Coordination Office",
+        "phone": "Tel.: (+996) 0312 611546",
+        "email": "E-mail: info@soskyrgyzstan.kg"
+      }
+    }
+  }
+}

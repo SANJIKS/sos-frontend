@@ -1,0 +1,123 @@
+.container {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 280px;
+  width: 100%;
+  gap: 6px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 32px;
+  animation: fadeIn 0.3s ease forwards;
+
+  .image {
+    align-self: center;
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+
+  h1 {
+    color: #00aeef;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  p {
+    color: #0e3862;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  span {
+    color: #f04e69;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    cursor: pointer;
+  }
+
+  .btn {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 14px;
+  }
+
+  .link {
+    align-self: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    top: 80px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 6px;
+    max-width: 192px;
+    border-radius: 16px;
+
+    .image {
+      width: 180px;
+      height: 138px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+
+    p {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    span {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .btn {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 4px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+  width: 200px;
+}
+
+.selected {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.2s;
+
+  &:hover {
+    border-color: #666;
+  }
+}
+
+.arrow {
+  border: solid #00aeef;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+
+  &.open {
+    transform: rotate(-135deg);
+  }
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #f2f2f2;
+  }
+}
+
+.active {
+  background: #e6f7ff;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media screen and (max-width: 750px) {
+  .arrow {
+    border-width: 0 1px 1px 0;
+  }
+.selected {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+  .option {
+      padding: 10px;
+  }
+}

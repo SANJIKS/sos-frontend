@@ -1,0 +1,229 @@
+.partnersCarousel {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+
+    h3 {
+        color: #00AEEF;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+    }
+
+    .loading {
+        text-align: center;
+        padding: 40px;
+        color: #6B7280;
+        font-size: 18px;
+    }
+
+    .error {
+        text-align: center;
+        padding: 40px;
+        color: #DC2626;
+        font-size: 18px;
+        background: #FEF2F2;
+        border: 1px solid #FECACA;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .carouselContainer {
+        position: relative;
+        padding: 0 60px; // Отступ для стрелок навигации
+
+        .swiper {
+            overflow: visible;
+
+            // Кастомные стрелки навигации
+            :global(.swiper-button-next),
+            :global(.swiper-button-prev) {
+                color: #6B7280;
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 50%;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+
+                &::after {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    background: #00AEEF;
+                    color: white;
+                    transform: scale(1.05);
+                }
+
+                &:disabled {
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                }
+            }
+
+            :global(.swiper-button-next) {
+                right: -30px;
+            }
+
+            :global(.swiper-button-prev) {
+                left: -30px;
+            }
+        }
+    }
+
+    .partnerCard {
+        width: 100%;
+        height: 300px;
+        border-radius: 50px;
+        border: 2px solid rgba(199, 234, 251, 0.8);
+        background: #FEFEFE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 4px 50px 2px rgba(0, 158, 224, 0.07);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 60px 4px rgba(0, 158, 224, 0.15);
+        }
+
+        .cardContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+
+            .logoContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+
+                .logo {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                    filter: brightness(0) saturate(100%) invert(0%);
+                    width: auto;
+                    height: auto;
+                }
+            }
+
+            .partnerName {
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px;
+                color: #0E3862;
+                text-align: center;
+                margin-top: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .carouselContainer {
+            padding: 0 50px;
+
+            .swiper {
+                :global(.swiper-button-next),
+                :global(.swiper-button-prev) {
+                    width: 50px;
+                    height: 50px;
+
+                    &::after {
+                        font-size: 18px;
+                    }
+                }
+
+                :global(.swiper-button-next) {
+                    right: -25px;
+                }
+
+                :global(.swiper-button-prev) {
+                    left: -25px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        gap: 30px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        .carouselContainer {
+            padding: 0 20px;
+
+            .swiper {
+                :global(.swiper-button-next),
+                :global(.swiper-button-prev) {
+                    width: 40px;
+                    height: 40px;
+                    display: none; // Скрываем стрелки на мобильных
+                }
+            }
+        }
+
+        .partnerCard {
+            height: 200px;
+            border-radius: 30px;
+            padding: 15px;
+
+            .cardContent {
+                gap: 15px;
+
+                .logoContainer {
+                    max-height: 100px;
+                    max-width: 150px;
+                }
+
+                .partnerName {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .carouselContainer {
+            padding: 0 10px;
+        }
+
+        .partnerCard {
+            height: 180px;
+            border-radius: 20px;
+            padding: 12px;
+
+            .cardContent {
+                .logoContainer {
+                    max-height: 80px;
+                    max-width: 120px;
+                }
+
+                .partnerName {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

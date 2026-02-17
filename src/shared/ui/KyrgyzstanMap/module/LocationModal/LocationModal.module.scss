@@ -1,0 +1,86 @@
+.modalContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    gap: 14px;
+    max-width: 900px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 32px;
+    height: max-content;
+    min-height: 300px;
+    position: absolute;
+    z-index: 1;
+    background: #FFF;
+    box-shadow: 0 105px 29px 0 rgba(0, 0, 0, 0.00), 0 67px 27px 0 rgba(0, 0, 0, 0.01), 0 38px 23px 0 rgba(0, 0, 0, 0.05), 0 17px 17px 0 rgba(0, 0, 0, 0.09), 0 4px 9px 0 rgba(0, 0, 0, 0.10);
+
+    .image {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: 16px;
+        object-fit: cover;
+        background-color: rgb(180, 180, 180);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .modalContent {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+
+        h2 {
+            color: #00AEEF;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        p {
+            color: #0E3862;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        button {
+            display: flex;
+            width: 260px;
+            padding: 10px 14px;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            border-radius: 14px;
+            background: #F04E69;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        .image {
+            min-height: 300px;
+        }
+
+    }
+
+}

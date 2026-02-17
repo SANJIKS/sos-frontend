@@ -1,0 +1,36 @@
+.personalData {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: var(--System-Colors-Web-color-primary, #00AEEF);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    cursor: pointer;
+  }
+
+  .inputs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  @media (max-width: 550px) {
+    gap: 20px;
+
+    .inputs {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

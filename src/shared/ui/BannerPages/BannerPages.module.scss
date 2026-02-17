@@ -1,0 +1,22 @@
+.banner {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(128, 175, 198, 0.10) 0%, rgba(71, 116, 148, 0.60) 50%, rgba(14, 56, 98, 0.90) 100%);
+
+  .image {
+    opacity: 0.5;
+    background: linear-gradient(180deg, rgba(128, 175, 198, 0.10) 0%, rgba(71, 116, 148, 0.60) 50%, rgba(14, 56, 98, 0.90) 100%);
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    height: 500px;
+  }
+}

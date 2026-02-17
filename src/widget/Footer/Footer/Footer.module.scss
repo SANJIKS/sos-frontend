@@ -1,0 +1,45 @@
+.footer {
+  background-color: #00aeef;
+}
+
+.footerContainer {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+
+  .footerDonation {
+    padding: 0 0 30px 0;
+  }
+
+  @media (max-width: 1115px) {
+    align-items: flex-start;
+    padding: 20px;
+
+    .footerDonation {
+      display: none;
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    padding-bottom: 30px;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #DFDFDF;
+  margin: 40px 0 22px 0;
+}

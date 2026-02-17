@@ -1,0 +1,30 @@
+.headerNavs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 400ms;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+  color: #00aeef;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-decoration: none;
+}
+
+.tab:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0e3862;
+}

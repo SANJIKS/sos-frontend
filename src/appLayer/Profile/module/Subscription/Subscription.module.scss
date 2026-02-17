@@ -1,0 +1,107 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--Border-Radius-radius-lg, 14px);
+    border: 2px solid var(--System-Colors-Web-color-primary-light, #C7EAFB);
+    gap: 40px;
+    padding: 30px 20px 30px 20px;
+
+    li {
+      display: flex;
+      gap: 30px;
+
+      label {
+        overflow: hidden;
+        color: var(--System-Colors-Web-color-text-black, #1C1C1C);
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1px;
+      }
+
+      .three {
+        overflow: hidden;
+        color: var(--System-Colors-Web-color-secondary, #F04E69);
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1px;
+      }
+
+      .receipt {
+        all: unset;
+        overflow: hidden;
+        color: var(--System-Colors-Web-color-primary, #00AEEF);
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        cursor: pointer;
+      }
+
+      .status {
+        all: unset;
+        overflow: hidden;
+        color: var(--System-Colors-Web-color-state-success, #43A047);
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.1px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .subscription {
+    gap: 18px;
+    //align-items: center;
+
+    .itemWrapper {
+      gap: 12px;
+      padding: 20px 10px 20px 10px;
+
+      li {
+        gap: 20px;
+
+        label {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .three {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .receipt {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.successStory {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+
+    .title {
+        color: #F04E69;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 20px;
+        align-items: flex-start;
+        border-radius: 32px;
+        background: #E9F8FF;
+        align-items: center;
+
+        h3 {
+            color: #F04E69;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            text-align: center;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            li {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+
+                span {
+                    width: 200px;
+                    position: relative;
+
+                    height: 200px;
+                    min-width: 200px;
+                    min-height: 200px;
+                }
+
+                p {
+                    color: #0E3862;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 36px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        padding: 30px;
+        align-items: center;
+        border-radius: 32px;
+        background: #C7EAFB;
+        box-shadow: 0 78px 22px 0 rgba(0, 0, 0, 0.00), 0 50px 20px 0 rgba(0, 0, 0, 0.01), 0 28px 17px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.09), 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+
+        .descriptionText {
+            display: flex;
+            gap: 20px;
+            text-align: left;
+
+            span {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            h3 {
+                color: #F04E69;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+
+            p {
+                color: #F04E69;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+
+        .descriptionImage {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            border-radius: 32px;
+            background: rgba(0, 0, 0, 0.20);
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        gap: 20px;
+        .title {
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        .card {
+            border-radius: 16px;
+            padding: 24px 5px;
+            gap: 12px;
+
+            h3 {
+                font-size: 22px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    gap: 12px;
+
+                    p {
+                        font-size: 22px;
+                        line-height: 28px;
+                        font-weight: 600;
+                    }
+
+                }
+
+            }
+        }
+
+        .description {
+            flex-direction: column;
+            gap: 12px;
+            border-radius: 16px;
+            padding: 18px;
+            background: #C7EAFB;
+            box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.09), 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+
+            .descriptionText {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                span {
+                    gap: 12px;
+                    h3 {
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .descriptionImage {
+                width: 100%;
+                border-radius: 14px;
+            }
+        }
+    }
+}

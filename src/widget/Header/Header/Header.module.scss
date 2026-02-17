@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 11;
+  position: relative;
+  @media (max-width: 1200px) {
+    .headerDowns {
+      display: none;
+    }
+  }
+}
+
+

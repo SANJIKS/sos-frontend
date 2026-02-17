@@ -1,0 +1,104 @@
+.donation {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 0 60px 0;
+
+  .header {
+    display: flex;
+    gap: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 95%;
+
+    .imageWrapper {
+      flex: 0 0 30%; // картинка занимает 30%
+      border-radius: 16px;
+      overflow: hidden;
+      //box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+
+      .image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .textWrapper {
+      flex: 1; // текст занимает оставшиеся 70%
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        color: #333;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      h1 {
+        color: #0E3862;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      p {
+        color: #333;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h3 {
+          color: #1E88E5;
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        p {
+          color: #333;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 28px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #1E88E5;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #1669b1;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 40px 0 40px 0;
+
+    .header {
+      flex-direction: column;
+      gap: 20px;
+
+      .imageWrapper {
+        flex: none;
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.form {
+    position: relative;
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 16px;
+
+    .title {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        h3 {
+            color: #FFF;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        button {
+            display: inline-flex;
+            padding: 10px 14px;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            border-radius: 14px;
+            background: #F04E69;
+            margin-top: 47px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+  @media screen and (max-width: 760px) {
+    padding: 20px;
+    .title {
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+      button {
+        margin-top: 14px;
+
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,10 @@
+.footerSocials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @media screen and (max-width: 525px) {
+    width: 100%;
+  }
+}

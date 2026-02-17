@@ -1,0 +1,29 @@
+.headerNavs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 400ms;
+  font-style: normal;
+  text-align: center;
+
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-decoration: none;
+}
+
+.tab:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0E3862;
+}

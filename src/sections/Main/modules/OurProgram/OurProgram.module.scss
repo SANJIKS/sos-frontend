@@ -1,0 +1,135 @@
+.ourProgram {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  max-width: var(--max-width);
+  width: 100%;
+  overflow: hidden;
+
+  h1 {
+    color: #00AEEF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+
+  p {
+    color: var(--System-Colors-Web-color-primary-dark, #0E3862);
+    text-align: center;
+    font-size: var(--heading-font-size-heading-sm, 22px);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold, 600);
+    line-height: var(--heading-line-height-heading-sm, 28px); /* 127.273% */
+  }
+
+  .link {
+    align-self: center;
+  }
+
+  .storiesSwiper {
+    padding: 0 0px 0px 0px;
+    overflow: visible;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+
+    .image {
+      height: 380px;
+      border-radius: 32px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 16px;
+      overflow: hidden;
+
+      h4 {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        padding: 6px 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 14px;
+        background: rgba(250, 251, 252, 0.80);
+        color: #0E3862;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+      }
+    }
+
+    p {
+      padding: 10px 14px;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 14px;
+      background: #F04E69;
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      flex-grow: 1;
+    }
+  }
+
+  :global {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #00AEEF;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #d1d1d1;
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      transition: background-color 0.2s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #00AEEF;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .storiesSwiper {
+      padding: 0 0 0 0;
+    }
+
+    :global {
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+}

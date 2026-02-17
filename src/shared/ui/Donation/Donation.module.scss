@@ -1,0 +1,134 @@
+.donation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 32px;
+  background: rgba(250, 251, 252, 0.3);
+}
+
+.donationPrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.donationText {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+}
+
+.donateBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
+  color: #0e3862;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+
+  &:hover {
+    background-color: #c7eafb;
+    color: #00aeef;
+    transform: scale(1.03);
+  }
+
+  &:active {
+    background-color: #c7eafb;
+    color: #00aeef;
+    transform: scale(1.03);
+  }
+}
+
+.donationInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  .input {
+    display: flex;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: #e7ebef;
+    border: none;
+    width: 139px;
+
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+
+    &::placeholder {
+      color: #b0b0b0;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+  }
+}
+
+@media screen  and (max-width: 750px) {
+ .donation {
+   flex-direction: column;
+   width: 100%;
+   gap: 8px;
+   padding: 8px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 16px;
+ }
+  .donationPrice {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+  }
+  .donateBtn {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight:600;
+    line-height: 24px;
+  }
+  .donationInput {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    input {
+      width: 100% !important;
+    }
+  }
+
+}

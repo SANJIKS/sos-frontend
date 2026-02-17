@@ -1,0 +1,23 @@
+.headerUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  background-color: #00AEEF;
+  padding: 20px 0;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobileHeader {
+  display: none;
+
+  @media (max-width: 1200px) {
+    display: block;
+    width: 100%;
+  }
+}
+

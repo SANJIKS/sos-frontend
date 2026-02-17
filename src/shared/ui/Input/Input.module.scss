@@ -1,0 +1,70 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.inputLabel {
+  color: #869bb0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inputField {
+  width: 100%;
+  height: 39px;
+  padding: 11px 15px;
+  border: 1px solid #d3e0fe;
+  border-radius: 12px;
+  background: #e7ebef;
+  font-size: 14px;
+  color: #2d2d2d;
+  transition: border 0.2s;
+}
+
+.inputField:focus {
+  outline: none;
+  border: none;
+}
+
+.inputField::placeholder {
+  color: #899cc9;
+  font-size: 14px;
+}
+
+.iconLeft,
+.iconRight {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 100%;
+  color: #899cc9;
+}
+
+.iconLeft {
+  left: 12px;
+}
+
+.iconRight {
+  right: 12px;
+  cursor: pointer; /* usually right icon is interactive */
+}
+
+.inputErrorMessage {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #d91b1b;
+}

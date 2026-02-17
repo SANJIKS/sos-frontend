@@ -1,0 +1,111 @@
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  background-color: #00AEEF;
+  //margin-bottom: 30px;
+
+  padding: 12px 20px;
+
+  .spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  .mainIcon {
+    margin-right: 6px;
+  }
+
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .bold {
+      color: #FFF;
+      font-family: Roboto;
+      font-size: 9.6px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* From Uiverse.io by Cevorob */
+.burger {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    transition: 0.25s ease-in-out;
+  }
+
+  &.active {
+    span:nth-of-type(1) {
+      transform: rotate(45deg) translate(6px, 4px);
+    }
+
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    span:nth-of-type(3) {
+      transform: rotate(-45deg) translate(6px, -4px);
+    }
+  }
+}
+//
+
+.menu {
+  position: absolute;
+  top: 58px;
+  right: 0;
+  background: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

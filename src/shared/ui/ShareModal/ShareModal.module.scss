@@ -1,0 +1,77 @@
+ .shareModal {
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.6);
+     display: flex;
+     align-items: flex-end;
+     /* как в инсте */
+     justify-content: center;
+     z-index: 1000;
+ }
+
+   .shareBtn {
+        display: inline-flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-radius: 32px;
+        background: #C7EAFB;
+        color:  #00AEEF;
+        text-align: center;
+        font-size:  16px;
+        font-style: normal;
+        font-weight:  500;
+        line-height: 22px;
+        cursor: pointer;
+        max-width: max-content;
+        border: none;
+        display: flex;
+
+    } 
+ .modalContent {
+     background: #fff;
+     width: 100%;
+     max-width: 400px;
+     border-radius: 20px 20px 0 0;
+     padding: 20px;
+
+     h3 {
+         margin-bottom: 15px;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     .buttons {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+     }
+
+     .option {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         padding: 8px;
+         border-radius: 10px;
+         cursor: pointer;
+
+         &:hover {
+             background: #f8f8f8;
+         }
+     }
+
+     .closeBtn {
+         margin-top: 15px;
+         width: 100%;
+         padding: 10px;
+         border: none;
+         border-radius: 12px;
+         background: #eee;
+         cursor: pointer;
+
+         &:hover {
+             background: #ddd;
+         }
+     }
+ }

@@ -1,0 +1,32 @@
+.ourFriendsCorporateDonors {
+    padding: 60px 0;
+    
+    .info {
+        text-align: center;
+        margin-top: 60px;
+        max-width: var(--max-width);
+        width: 95%;
+        margin: 0 auto;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            padding: 15px 40px;
+            background-color: #E63946;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: #d62839;
+            }
+        }
+    }
+}

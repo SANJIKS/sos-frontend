@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sos_frontend
+    restart: unless-stopped
+    # Открываем порт только для самого сервера (безопасность)
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      # Если нужно, укажи здесь URL бэкенда явно, хотя он собирается при билде
+      - NEXT_PUBLIC_API_URL=https://api.sos-kyrgyzstan.org
+    networks:
+      - sos-network
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  sos-network:
+    driver: bridge

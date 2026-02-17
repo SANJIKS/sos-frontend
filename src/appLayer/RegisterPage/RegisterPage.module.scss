@@ -1,0 +1,126 @@
+.registerPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+
+  @media (max-width: 1200px) {
+    .authBanner {
+      display: none;
+    }
+
+  }
+
+  .registerPageRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 72px;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      padding: 0 ;
+    }
+
+    h2 {
+      color: #0E3862;
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+
+      @media (max-width: 768px) {
+        font-size: 22px;
+        line-height: 24px;
+      }
+    }
+
+    .account {
+      color: #0E3862;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 150% */
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    .linkedAccount {
+      color: #0E3862;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px; /* 150% */
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      cursor: pointer;
+    }
+
+    .registerPageForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      @media (max-width: 768px) {
+        gap: 18px;
+      }
+
+      span {
+        color: #0E3862;
+        text-align: center;
+        font-size: 10.5px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px; /* 142.857% */
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+      .police {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+      }
+
+      .inputContainer {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 18px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .registerPageFormFormButton {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

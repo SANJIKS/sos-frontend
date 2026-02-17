@@ -1,0 +1,113 @@
+.errorPage {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .image {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+
+        img {
+            position: relative !important;
+        }
+    }
+
+    .contend {
+        display: flex;
+        margin: 0 auto;
+        gap: 14px;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            color: #00AEEF;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 58px;
+        }
+
+        p {
+            color: #00AEEF;
+            text-align: center;
+
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+        }
+
+        .button {
+            display: flex;
+            padding: 14px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 14px;
+            background: #F04E69;
+            color:  #FFF;
+
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height:28px;
+            max-width: max-content;
+            margin: 0 auto;
+            outline: none;
+            cursor: pointer;
+            border: none;
+        }
+
+
+    }
+    @media screen and (max-width: 768px) {
+        .image {
+            width: 100%;
+        }
+
+        .contend {
+            gap: 10px;
+
+            h1 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .button {
+                font-size: 18px;
+                line-height: 24px;
+                padding: 10px 14px;
+            }
+            @media screen and (max-width: 500px) {
+                h1 {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .button {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 8px 14px;
+                }
+                
+            }
+        }
+        
+    }
+}

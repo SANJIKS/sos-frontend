@@ -1,0 +1,124 @@
+.principles {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+
+  h3 {
+    color: #00AEEF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .principlesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .principlesItem {
+      display: flex;
+      border-radius: 32px;
+      background: #FFF;
+      box-shadow: 0 78px 22px 0 rgba(0, 0, 0, 0.00), 0 50px 20px 0 rgba(0, 0, 0, 0.01), 0 28px 17px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.09), 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+      gap: 30px;
+      display: flex;
+      padding: 30px;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-shrink: 0;
+
+      .principlesItemImage {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        min-width: 200px;
+        min-height: 200px;
+      }
+
+      .principlesItemText {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+
+        h4 {
+          color: #0E3862;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 28px;
+          padding: 0;
+          margin: 0;
+        }
+
+        p {
+          color: #F04E69;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 32px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    gap: 18px;
+
+    h3:first-of-type {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    h3:nth-of-type(2) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    .principlesList {
+      .principlesItem {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        padding: 18px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0 78px 22px 0 rgba(0, 0, 0, 0.00), 0 50px 20px 0 rgba(0, 0, 0, 0.01), 0 28px 17px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.09), 0 3px 7px 0 rgba(0, 0, 0, 0.10);
+
+        .principlesItemText {
+
+          gap: 12px;
+
+          h4 {
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+          }
+
+          p {
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
