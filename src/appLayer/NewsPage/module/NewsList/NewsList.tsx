@@ -95,7 +95,9 @@ const NewsList = () => {
                             </div>
                             <div className={s.info}>
                                 <p className={s.category}>
-                                    {item.category?.name || item.category || "Новости"}
+                                    {typeof item.category === 'object' && item.category !== null
+                                        ? item.category.name
+                                        : item.category || "Новости"}
                                 </p>
                                 <p className={s.title}>{item.title}</p>
                                 <div className={s.avatar}>
