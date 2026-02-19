@@ -3,6 +3,7 @@ import s from "./OurFriendsPartners.module.scss";
 import { Cards } from "@/appLayer/OurFriends/module";
 import { useTranslations } from 'next-intl';
 import OurFriendsFeedbackForm from "@/shared/ui/FeedbackForm/OurFriendsFeedbackForm";
+import Partners from '@/appLayer/Partners/Partners'
 
 const OurFriendsPartners = () => {
     const t = useTranslations('ourFriendsPartners')
@@ -23,11 +24,10 @@ const OurFriendsPartners = () => {
                     translationKey="contacts.feedbackForm"
                     recipientEmail="info@soskyrgyzstan.kg"
                 />
+                <Partners />
             </div>
         </>
-
     );
 };
 
 export default OurFriendsPartners;
-
