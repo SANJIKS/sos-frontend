@@ -5,7 +5,7 @@ export interface vacancyType {
     // address: string;
     // work_schedule: string;
     // deadline: string;
-    id: number;
+    id?: number;
     title: string;
     description: string;
     address: string;

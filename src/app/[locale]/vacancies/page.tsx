@@ -1,19 +1,25 @@
 import React from 'react';
 import VacanciesPage from "@/appLayer/VacanciesPage/VacanciesPage";
-import { $apiClient } from '@/shared/api/api_client';
+import { $serverApiClient } from '@/shared/api/server_api_client';
+
 type TVacancy = {
-id: number;
-title: string;
-description: string;
-address: string;
-work_schedule: string;
-deadline: string;
+    id?: number;
+    title: string;
+    description: string;
+    address: string;
+    work_schedule: string;
+    deadline: string;
 }
+
 async function Page() {
-const response = await $apiClient.get<TVacancy[]>('/vacancies');
-    return (
-        <VacanciesPage vacancies={response.data as TVacancy[]} />
-    );
+    let vacancies: TVacancy[] = [];
+    try {
+        const response = await $serverApiClient.get<TVacancy[]>('/vacancies/');
+        vacancies = response.data ?? [];
+    } catch (e) {
+        console.error('Vacancies fetch error:', e);
+    }
+    return <VacanciesPage vacancies={vacancies} />;
 }
 
 export default Page;
