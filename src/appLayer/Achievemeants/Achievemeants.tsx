@@ -7,7 +7,6 @@ import Button from '@/shared/ui/Button/Button'
 import {Link} from '@/i18n/navigation'
 import Image from 'next/image'
 
-// 1. Импорт компонентов и стилей Swiper
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay, Navigation} from 'swiper/modules'
 import 'swiper/css'
@@ -59,22 +58,23 @@ const Achievemeants = () => {
                 <h1>{t('title')}</h1>
                 <div>
                     <Swiper
-                        modules={[Navigation,  Autoplay]}
-                        spaceBetween={30}
+                        modules={[Navigation, Autoplay]}
+                        spaceBetween={8}
                         slidesPerView={3}
                         loop={true}
+                        style={{alignItems: 'stretch'}}
                         autoplay={{
                             delay: 3500,
                             disableOnInteraction: false,
                         }}
                         breakpoints={{
                             320: {
-                                slidesPerView: 1,
-                                spaceBetween: 20
+                                slidesPerView: 3,
+                                spaceBetween: 8
                             },
                             768: {
-                                slidesPerView: 2,
-                                spaceBetween: 30
+                                slidesPerView: 3,
+                                spaceBetween: 20
                             },
                             1024: {
                                 slidesPerView: 3,
@@ -83,22 +83,20 @@ const Achievemeants = () => {
                         }}
                         className={s.storiesSwiper}
                     >
-                        {
-                            data.map((item, i) => (
-                                <SwiperSlide key={i}>
-                                    <div className={s.blocks} key={i}>
-                                        <Image
-                                            src={`/icons/achievemeants/vector-${i + 1}.svg`}
-                                            alt="icon"
-                                            width={140}
-                                            height={140}
-                                        />
-                                        <h2>{item.title}</h2>
-                                        <p>{item.description}</p>
-                                    </div>
-                                </SwiperSlide>
-                            ))
-                        }
+                        {data.map((item, i) => (
+                            <SwiperSlide key={i}>
+                                <div className={s.blocks}>
+                                    <Image
+                                        src={`/icons/achievemeants/vector-${i + 1}.svg`}
+                                        alt="icon"
+                                        width={140}
+                                        height={140}
+                                    />
+                                    <h2>{item.title}</h2>
+                                    <p>{item.description}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
                 <Link href={'about/foundation-history'} className={s.link}>

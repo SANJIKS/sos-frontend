@@ -23,7 +23,7 @@ const Donation = () => {
         handleTypeChange
     } = usePament()
 
-    const sums = [200, 400, 800]
+    const sums = [500, 1500, 3000]
 
     const handleInputDonate = () => {
         if (payment.sum && payment.sum > 0) {

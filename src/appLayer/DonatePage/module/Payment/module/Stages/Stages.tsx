@@ -12,7 +12,7 @@ interface StagesProps {
 
 const Stages = ({payment, setPayment, handleSumClick, handleTypeChange}: StagesProps) => {
     const t = useTranslations('payment.stages1')
-    const summs = [200, 500, 1000, 2000]
+    const summs = [500, 1000, 2000, 5000]
     return (
         <div className={s.stages}>
             <input className={s.input} type="number" min={0} placeholder={t('placeholder')} value={payment.sum || ''}

@@ -34,41 +34,41 @@ const DonationForm = () => {
         }
     }
     const getDynamicContent = () => {
-        let selectedAmount = '200'
+        let selectedAmount = '500'
 
         if (activeTariff !== null) {
             selectedAmount = tariffs[activeTariff]
         } else if (payment.sum) {
             const amount = payment.sum
-            if (amount <= 350) {
-                selectedAmount = '200'
-            } else if (amount <= 750) {
+            if (amount <= 750) {
                 selectedAmount = '500'
             } else if (amount <= 1500) {
                 selectedAmount = '1000'
-            } else {
+            } else if (amount <= 3500) {
                 selectedAmount = '2000'
+            } else {
+                selectedAmount = '5000'
             }
         }
 
         const dynamicTexts = t.raw('dynamicTexts') as any
-        const texts = dynamicTexts[selectedAmount] || dynamicTexts['200']
+        const texts = dynamicTexts[selectedAmount] || dynamicTexts['500']
 
         // Определяем иконки для каждого тарифа
         const icons = {
-            '200': {
+            '500': {
                 left: '/icons/donate/icons/payment-methods/choice-left.svg',
                 right: '/icons/donate/icons/payment-methods/choice-right.svg'
             },
-            '500': {
+            '1000': {
                 left: '/icons/donate/icons/payment-methods/movie-ticket.svg',
                 right: '/icons/donate/icons/payment-methods/grocery-set-for-a-week.svg'
             },
-            '1000': {
+            '2000': {
                 left: '/icons/donate/icons/payment-methods/a-set-of-school-supplies.svg',
                 right: '/icons/donate/icons/payment-methods/complete-set-of-technical-materials.svg'
             },
-            '2000': {
+            '5000': {
                 left: '/icons/donate/icons/payment-methods/family-dinner-at-a-cafe.svg',
                 right: '/icons/donate/icons/payment-methods/a-month-of-classes-in-a-developmental-club.svg'
             }
@@ -76,7 +76,7 @@ const DonationForm = () => {
 
         return {
             texts,
-            icons: icons[selectedAmount as keyof typeof icons] || icons['200']
+            icons: icons[selectedAmount as keyof typeof icons] || icons['500']
         }
     }
 
@@ -119,25 +119,19 @@ const DonationForm = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className={s.choice}>
-                            <div className={s.left}>
-                                <h3>{dynamicContent.texts.left.title}</h3>
-                                <div>
-                                    <span>
-                                        <Image src={dynamicContent.icons.left} alt="choice"
-                                               width={36} height={36}/>
-                                    </span>
-                                    <p>{dynamicContent.texts.left.description}</p>
-                                </div>
-                            </div>
-                            <div className={s.right}>
-                                <h3>{dynamicContent.texts.right.title}</h3>
-                                <div>
+                       <div style={{ display: 'flex', justifyContent: 'center', width: '100%', margin: '30px 0' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: '400px' }}>
+                                <h3 style={{ fontWeight: 'bold', fontSize: '18px', marginBottom: '15px', color: '#005587' }}>
+                                    {dynamicContent.texts.right.title}
+                                </h3>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', justifyContent: 'center' }}>
                                     <span>
                                         <Image src={dynamicContent.icons.right}
                                                alt="choice" width={36} height={36}/>
                                     </span>
-                                    <p>{dynamicContent.texts.right.description} </p>
+                                    <p style={{ margin: 0, fontSize: '14px', color: '#333' }}>
+                                        {dynamicContent.texts.right.description}
+                                    </p>
                                 </div>
                             </div>
                         </div>

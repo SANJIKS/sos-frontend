@@ -25,7 +25,7 @@ const Stages = ({
                     onClose
                 }: StagesProps) => {
     const t = useTranslations('payment.stages1')
-    const summs = [200, 500, 1000, 2000]
+    const summs = [500, 1000, 2000, 5000]
 
     const DONATION_TYPES: { label: string; value: 'one_time' | 'monthly' | 'yearly' }[] = [
         {label: 'Разово', value: 'one_time'},

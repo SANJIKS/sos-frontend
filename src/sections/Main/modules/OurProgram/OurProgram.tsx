@@ -46,12 +46,12 @@ const OurProgram = () => {
                     }}
                     breakpoints={{
                         320: {
-                            slidesPerView: 1,
-                            spaceBetween: 20
+                            slidesPerView: 3,
+                            spaceBetween: 8
                         },
                         768: {
-                            slidesPerView: 2,
-                            spaceBetween: 30
+                            slidesPerView: 3,
+                            spaceBetween: 20
                         },
                         1024: {
                             slidesPerView: 3,

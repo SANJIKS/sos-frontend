@@ -35,7 +35,16 @@ const Partners = () => {
     ]
     
     return (
-        <div className={s.partners}>
+        <div 
+            className={s.partners} 
+            style={{ 
+                border: '3px solid #bce2f5', /* Светло-голубая рамка */
+                borderRadius: '0px',        /* Скругленные углы (можно убрать, если нужны прямые: 0px) */
+                padding: '40px 20px',        /* Отступы внутри рамки */
+                margin: '40px 0',            /* Отступы снаружи (сверху и снизу) */
+                backgroundColor: '#f8fcff'   /* Очень легкий голубоватый фон внутри (опционально) */
+            }}
+        >
             <h1>{t('title')}</h1>
             <p>{t('subtitle')}</p>
             <div className={s.blocks}>

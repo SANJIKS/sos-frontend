@@ -17,7 +17,7 @@ const PaymentStub = () => {
         email: ''
     })
 
-    const summs = [200, 500, 1000, 2000]
+    const summs = [500, 1000, 2000, 5000]
 
     const handleNext = () => {
         if (!amount && !customAmount) {

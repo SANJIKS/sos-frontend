@@ -484,9 +484,9 @@
         "description": "Hot meal for one child"
       }
     },
-    "tariffs": ["200", "500", "1000", "2000"],
+    "tariffs": ["500", "1000", "2000", "5000"],
     "dynamicTexts": {
-      "200": {
+      "500": {
         "left": {
           "title": "For you",
           "description": "A cup of coffee in the morning"
@@ -496,7 +496,7 @@
           "description": "Hot meal for one child"
         }
       },
-      "500": {
+      "1000": {
         "left": {
           "title": "For you",
           "description": "Movie ticket"
@@ -506,7 +506,7 @@
           "description": "Weekly grocery package for family"
         }
       },
-      "1000": {
+      "2000": {
         "left": {
           "title": "For you",
           "description": "Set of school supplies"
@@ -516,7 +516,7 @@
           "description": "Full set of educational materials"
         }
       },
-      "2000": {
+      "5000": {
         "left": {
           "title": "For you",
           "description": "Family dinner at a cafe"

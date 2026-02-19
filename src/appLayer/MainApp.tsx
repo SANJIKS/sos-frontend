@@ -25,12 +25,3 @@ const MainApp: FC<IProps> = (props) => {
 }
 
 export default MainApp
-
-
-
-
-
-
-
-
-
