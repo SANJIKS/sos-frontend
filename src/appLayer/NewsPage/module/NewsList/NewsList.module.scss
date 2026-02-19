@@ -10,54 +10,48 @@
     align-items: center;
 
     .search {
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      max-width: 400px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 50px;
-      border-radius: 11.579px;
-      opacity: 0.8;
-      height: -webkit-fill-available;
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 11.579px;
+  opacity: 0.8;
+  overflow: hidden;
+  height: 44px;
 
-      &:hover,
-      &:focus-within,
-      :active {
-        opacity: 1;
-      }
+  &:hover,
+  &:focus-within {
+    opacity: 1;
+  }
 
-      input {
-        background: #C7EAFB;
-        padding: 5px;
-        border: none;
-        color: #0E3862;
-        font-size: 16.211px;
-        font-style: normal;
-        font-weight: 400;
-        height: -webkit-fill-available;
-        line-height: 25.474px;
-        outline: none;
+  input {
+    background: #C7EAFB;
+    padding: 5px 10px;
+    border: none;
+    color: #0E3862;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    height: 44px;
+  }
 
-      }
+  button {
+    background: #0E3862;
+    border: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
-      button {
-        background: #0E3862;
-        border: none;
-        padding: 7px 7px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        height: 100%;
-
-        svg {
-          color: white;
-          width: 20px;
-          height: 20px;
-        }
-      }
+    svg {
+      color: white;
+      width: 20px;
+      height: 20px;
     }
+  }
+}
 
     .sort {
       display: flex;
