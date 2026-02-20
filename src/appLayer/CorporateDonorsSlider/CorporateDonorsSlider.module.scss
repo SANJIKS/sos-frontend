@@ -1,0 +1,43 @@
+.slider {
+  border: 3px solid #bce2f5;
+  padding: 40px 20px;
+  margin: 40px 0;
+  background-color: #f8fcff;
+
+  .title {
+    color: #00AEEF;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 46px;
+    padding-bottom: 24px;
+  }
+
+  .blocks {
+    padding: 0 0 24px 0;
+  }
+
+  .blocksTwo {
+    padding: 0 0 24px 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  position: relative !important;
+}
+
+@media (max-width: 768px) {
+  .slider .title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .image {
+    height: 100px;
+  }
+}

@@ -24,6 +24,7 @@ const MobileNavs: FC<MobileNavsProps> = ({closeMenu}) => {
         "/our-friends": [
             { title: "partners", link: "partners" },
             { title: "becomeFriend", link: "friends" },
+            { title: "corporateDonors", link: "corporate-donors" },
         ],
     };
 
