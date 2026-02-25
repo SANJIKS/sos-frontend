@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './Cards.module.scss'
 import { $apiClient } from '@/shared/api/api_client'
-import { unstable_rootParams } from 'next/server'
 
 type Partner = {
     id: number;
@@ -18,11 +17,9 @@ type PartnersResponse = {
     success: boolean;
 };
 
-const Cards = async ({ title, category }: { title: string, category?: string }) => {
-    const { locale } = await unstable_rootParams()
-    
+const Cards = async ({ title, category, locale }: { title: string, category?: string, locale: string }) => {
     const searchParams = new URLSearchParams();
-    searchParams.append('lang', (Array.isArray(locale) ? locale[0] : locale) || 'ru');
+    searchParams.append('lang', locale || 'ru');
     if (category) {
         searchParams.append('category', category);
     }
@@ -32,6 +29,7 @@ const Cards = async ({ title, category }: { title: string, category?: string }) 
     if (!response.data || !Array.isArray(response.data) || response.data.length === 0) {
         return null
     }
+
     return (
         <div className={s.cards}>
             <h3>{title}</h3>
