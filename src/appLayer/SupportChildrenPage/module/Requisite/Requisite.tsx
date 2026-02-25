@@ -23,10 +23,17 @@ const Requisite = () => {
     }, [])
 
     if (loading) return <p>{t('loading')}</p>
-    if (error) return <p>{t('error')}: {error}</p>
 
-    const mainCity = requisites.filter((r) => r.organization_type === 'main_foundation')
-    const otherCities = requisites.filter((r) => r.organization_type !== 'main_foundation')
+    if (error) {
+        const errorMessage = typeof error === 'object' 
+            ? (error.message || JSON.stringify(error)) 
+            : String(error);
+            
+        return <p>{t('error')}: {errorMessage}</p>
+    }
+
+    const mainCity = requisites?.filter((r) => r.organization_type === 'main_foundation') || []
+    const otherCities = requisites?.filter((r) => r.organization_type !== 'main_foundation') || []
 
     return (
         <section className={s.container}>
