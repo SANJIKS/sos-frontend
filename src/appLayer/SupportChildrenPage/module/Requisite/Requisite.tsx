@@ -25,8 +25,8 @@ const Requisite = () => {
     if (loading) return <p>{t('loading')}</p>
 
     if (error) {
-        const errorMessage = typeof error === 'object' 
-            ? (error.message || JSON.stringify(error)) 
+        const errorMessage = typeof error === 'object' && error !== null
+            ? ((error as { message?: string }).message || JSON.stringify(error))
             : String(error);
             
         return <p>{t('error')}: {errorMessage}</p>
