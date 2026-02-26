@@ -4,7 +4,12 @@ import Footer from '@/widget/Footer/Footer/Footer'
 import Header from '@/widget/Header/Header/Header'
 import React, {FC, ReactNode} from 'react'
 import {Toaster} from 'react-hot-toast'
-import Accessibilik from 'accessibility-react-widget'
+import dynamic from 'next/dynamic'
+
+const Accessibilik = dynamic(
+  () => import('accessibility-react-widget'),
+  { ssr: false }
+)
 
 interface IProps {
     children: ReactNode

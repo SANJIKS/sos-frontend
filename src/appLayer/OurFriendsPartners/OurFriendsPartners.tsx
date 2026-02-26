@@ -1,13 +1,13 @@
 import React from 'react';
 import s from "./OurFriendsPartners.module.scss";
 import { Cards } from "@/appLayer/OurFriends/module";
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';  // ← заменили импорт
 import { getLocale } from 'next-intl/server';
 import OurFriendsFeedbackForm from "@/shared/ui/FeedbackForm/OurFriendsFeedbackForm";
 import Partners from '@/appLayer/Partners/Partners'
 
 const OurFriendsPartners = async () => {
-    const t = useTranslations('ourFriendsPartners')
+    const t = await getTranslations('ourFriendsPartners')  // ← добавили await
     const locale = await getLocale()
 
     return (

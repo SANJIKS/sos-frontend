@@ -1,12 +1,12 @@
 import React from 'react'
 import s from './OurFriends.module.scss'
 import { Cards } from './module'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { getLocale } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 
 const OurFriends = async () => {
-  const t = useTranslations('ourFriendsPage')
+  const t = await getTranslations('ourFriendsPage')
   const locale = await getLocale()
 
   return (

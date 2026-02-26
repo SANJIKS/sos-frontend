@@ -45,7 +45,7 @@ export default function RootLayout({
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       </head>
-      <body className={`${montserrat.className} web`} id="body" style={{ margin: 0, padding: 0 }}>
+      <body className={`${montserrat.className} web`} id="body" style={{ margin: 0, padding: 0 }} suppressHydrationWarning>
         {children}
       </body>
     </html>
