@@ -120,16 +120,15 @@ const DonationForm = () => {
                             </ul>
                         </div>
                        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', margin: '30px 0' }}>
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: '400px' }}>
-                                <h3 style={{ fontWeight: 'bold', fontSize: '18px', marginBottom: '15px', color: '#005587' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+                                <h3 className={s.dynamicTitle} style={{ fontWeight: 'bold', marginBottom: '15px', color: '#005587' }}>
                                     {dynamicContent.texts.right.title}
                                 </h3>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px', justifyContent: 'center' }}>
                                     <span>
-                                        <Image src={dynamicContent.icons.right}
-                                               alt="choice" width={36} height={36}/>
+                                        <Image src={dynamicContent.icons.right} alt="choice" width={36} height={36}/>
                                     </span>
-                                    <p style={{ margin: 0, fontSize: '14px', color: '#333' }}>
+                                    <p className={s.dynamicText} style={{ margin: 0, color: '#333' }}>
                                         {dynamicContent.texts.right.description}
                                     </p>
                                 </div>

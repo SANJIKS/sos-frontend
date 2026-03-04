@@ -33,7 +33,9 @@ const Donation = () => {
     }
 
     return (
+        
         <div className={styles.container}>
+            <p className={styles.subscribeText}>Подпишитесь на ежемесячные пожертвования</p>
             <div className={styles.donation}>
                 <div className={styles.donationPrice}>
                     {sums.map((sum) => (
