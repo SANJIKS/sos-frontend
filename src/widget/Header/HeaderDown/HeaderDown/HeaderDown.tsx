@@ -1,20 +1,29 @@
 import React from 'react'
 import {Link} from '@/i18n/navigation'
 import styles from './HeaderDown.module.scss'
-import MainIco from '../../../../assets/icons/mainIcon.svg'
-import {useTranslations} from 'next-intl'
+import {useTranslations, useLocale} from 'next-intl'
 import HeaderNavs from '../HeaderNavs/HeaderNavs'
 import Button from '@/shared/ui/Button/Button'
 import Stages from '@/shared/ui/PaymentForms/Stages/Stages'
 import {usePament} from '@/appLayer/DonatePage/module/Payment/hooks/usePament'
 import Stages2 from '@/shared/ui/PaymentForms/Stages2/Stages2'
+import Image from 'next/image'
 
 interface HeaderDownProps {
     className?: string;
 }
 
+const logoMap: Record<string, string> = {
+    ru: '/icons/main/logo/logo-ru.svg',
+    ky: '/icons/main/logo/logo-kg.svg',
+    en: '/icons/main/logo/logo-en.svg',
+}
+
 const HeaderDown: React.FC<HeaderDownProps> = ({className}) => {
     const t = useTranslations()
+    const locale = useLocale()
+    const logoSrc = logoMap[locale] ?? logoMap['ru']
+
     const {
         payment,
         setPayment,
@@ -32,18 +41,19 @@ const HeaderDown: React.FC<HeaderDownProps> = ({className}) => {
     return (
         <div className={`${styles.headerDown} ${className ?? ''}`}>
             <Link href="/" className={styles.logo}>
-                <MainIco className={styles.mainIcon}/>
-                <label className={styles.logoText}>
-                    <span className={styles.bold}>{t('logoFirst')}</span>
-                    <span className={styles.bold}>{t('logoSecond')}</span>
-                    <span className={styles.bright}>{t('country')}</span>
-                </label>
+                <Image
+                    src={logoSrc}
+                    alt="SOS Children's Villages"
+                    width={160}
+                    height={60}
+                    style={{ objectFit: 'contain' }}
+                    priority
+                />
             </Link>
             <HeaderNavs/>
             <Button className={styles.btn} theme="red" onClick={() => setGlobalStages(1)}>
                 {t('donate')}
             </Button>
-
             {globalStages === 1 && (
                 <Stages
                     payment={payment} setPayment={setPayment}
@@ -52,7 +62,6 @@ const HeaderDown: React.FC<HeaderDownProps> = ({className}) => {
                     handleTypeChange={handleTypeChange}
                 />
             )}
-
             {globalStages === 2 && (
                 <Stages2
                     payment={payment} setPayment={setPayment} isAuthenticated={isAuthenticated}
