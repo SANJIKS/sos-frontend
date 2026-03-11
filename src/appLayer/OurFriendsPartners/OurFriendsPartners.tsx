@@ -1,13 +1,12 @@
 import React from 'react';
 import s from "./OurFriendsPartners.module.scss";
 import { Cards } from "@/appLayer/OurFriends/module";
-import { getTranslations } from 'next-intl/server';  // ← заменили импорт
+import { getTranslations } from 'next-intl/server';
 import { getLocale } from 'next-intl/server';
-import OurFriendsFeedbackForm from "@/shared/ui/FeedbackForm/OurFriendsFeedbackForm";
-import Partners from '@/appLayer/Partners/Partners'
+import LogoSection from "@/appLayer/OurFriendsPartners/LogoSection";
 
 const OurFriendsPartners = async () => {
-    const t = await getTranslations('ourFriendsPartners')  // ← добавили await
+    const t = await getTranslations('ourFriendsPartners')
     const locale = await getLocale()
 
     return (
@@ -19,15 +18,9 @@ const OurFriendsPartners = async () => {
                 <Cards title={t('foreignGovernments')} category="foreign_governments" locale={locale} />
                 <Cards title={t('otherOrganizations')} category="other_organizations" locale={locale} />
             </div>
-            <div className={s.info}>
-                <OurFriendsFeedbackForm
-                    title={t('form.title')}
-                    description={t('form.description')}
-                    translationKey="contacts.feedbackForm"
-                    recipientEmail="info@soskyrgyzstan.kg"
-                />
-                <Partners />
-            </div>
+
+            {/* Логотипы партнёров + кнопка "Стать партнёром" */}
+            <LogoSection />
         </>
     );
 };

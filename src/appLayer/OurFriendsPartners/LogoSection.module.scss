@@ -1,0 +1,261 @@
+.section {
+  padding: 60px 20px;
+}
+
+// ─── Категория ───────────────────────────────────────────────────────────────
+
+.category {
+  margin-bottom: 56px;
+}
+
+.categoryTitle {
+  color: #00AEEF;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+// ─── Сетка логотипов ─────────────────────────────────────────────────────────
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.logoCard {
+  position: relative;
+  width: 220px;
+  height: 170px;
+  border-radius: 24px;
+  border: 2px solid #C7EAFB;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 174, 239, 0.18);
+    transform: translateY(-3px);
+  }
+}
+
+// ─── CTA ─────────────────────────────────────────────────────────────────────
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 20px;
+}
+
+.ctaTitle {
+  color: #00AEEF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.ctaBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #F04E69;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 44px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+
+  span {
+    font-size: 22px;
+  }
+
+  &:hover {
+    background: #d63d57;
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// ─── Модалка ─────────────────────────────────────────────────────────────────
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(14, 56, 98, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 28px;
+  padding: 36px 36px 28px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  overflow: hidden;
+
+  // Заголовок и описание формы — скрываем, они идут из closeBtn + внешнего h3
+  :global([class*="title"]) {
+    display: none !important;
+  }
+
+  // form — вертикальная колонка без лишних отступов
+  :global([class*="form"]) form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  // Левая и правая части — в одну колонку
+  :global([class*="left"]),
+  :global([class*="right"]) {
+    display: contents !important;
+  }
+
+  // Скрыть дублирующую кнопку из .left
+  :global([class*="left"]) button[type="submit"] {
+    display: none !important;
+  }
+
+  // label + input компактно
+  :global([class*="form"]) label {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+
+    p {
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      color: #0E3862 !important;
+      margin: 0 !important;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: 2px solid #C7EAFB !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    color: #0E3862 !important;
+    outline: none !important;
+    background: #fff !important;
+
+    &:focus {
+      border-color: #00AEEF !important;
+    }
+
+    &::placeholder {
+      color: #aac4d8 !important;
+    }
+  }
+
+  textarea {
+    min-height: 90px !important;
+    max-height: 90px !important;
+    resize: none !important;
+  }
+
+  // Кнопка отправки
+  button[type="submit"] {
+    width: 100% !important;
+    background: #F04E69 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 13px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    margin-top: 4px !important;
+    transition: background 0.2s !important;
+
+    &:hover {
+      background: #d63d57 !important;
+    }
+
+    &:disabled {
+      opacity: 0.7 !important;
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: #0E3862;
+  cursor: pointer;
+
+  &:hover {
+    color: #F04E69;
+  }
+}
+
+.modalHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  color: #0E3862;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.modalSub {
+  color: #6b8aa8;
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+  .categoryTitle {
+    font-size: 20px;
+  }
+
+  .logoCard {
+    width: 150px;
+    height: 120px;
+  }
+
+  .ctaTitle {
+    font-size: 22px;
+  }
+
+  .ctaBtn {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+
+  .modal {
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+}

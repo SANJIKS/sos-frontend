@@ -102,6 +102,15 @@
       "description": "Fill out the form and we will contact you to discuss partnership opportunities."
     }
   },
+  "logoSection": {
+  "institutionalDonors": "Institutional Donors",
+  "governmentBodies": "Government Bodies",
+  "others": "Others",
+  "ctaTitle": "Want to make a contribution?",
+  "ctaBtn": "Become a partner",
+  "modalTitle": "Become a partner",
+  "modalSub": "Leave a request — we will contact you"
+  },
   "ourFriendsCorporateDonors": {
     "title": "Corporate Donors",
     "cta": {"title": "Want to become a corporate donor?", "button": "Become a corporate donor"},
@@ -133,13 +142,13 @@
       "donateButton": "Donate now"
     },
     "content": {
-      "partnersTitle": "Our Partners",
-      "friendsTitle": "Stories of our friends",
-      "joinUsText": "Join us!\nWrite your review!"
+      "partnersTitle": "Corporate Donors",
+      "friendsTitle": "Stories of Our Friends",
+      "joinUsText": "Join the SOS Friends Club!\nShare why helping children matters to you!"
     },
     "carousel": {
       "loading": "Loading...",
-      "error": "Error loading partners"
+      "error": "Loading error"
     },
     "form": {
       "title": "Become a SOS Friend",

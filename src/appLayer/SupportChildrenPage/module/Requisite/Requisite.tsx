@@ -15,7 +15,6 @@ import {useRequisitesStore} from '@/store/useRequisitesStore'
 const Requisite = () => {
     const t = useTranslations('supportChildrenPage.requisites')
     const {requisites, qrCodes, fetchQrCodes, loading, error, fetchRequisites} = useRequisitesStore()
-  
 
     useEffect(() => {
         fetchRequisites()
@@ -28,7 +27,7 @@ const Requisite = () => {
         const errorMessage = typeof error === 'object' && error !== null
             ? ((error as { message?: string }).message || JSON.stringify(error))
             : String(error);
-            
+
         return <p>{t('error')}: {errorMessage}</p>
     }
 
@@ -58,8 +57,55 @@ const Requisite = () => {
                     {mainCity.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className={s.box}>
-                                <p className={s.boxTitle}>{item.currency}</p>
+                                <p className={s.boxTitle}>{item.currency_display || item.currency}</p>
                                 <h2 className={s.boxDescription}>{item.title}</h2>
+
+                                {item.bank_name && (
+                                    <p className={s.boxField}>{item.bank_name}</p>
+                                )}
+                                {item.account_number && (
+                                    <p className={s.boxField}>
+                                        Расчетный счет: {item.account_number}
+                                    </p>
+                                )}
+                                {item.bik && (
+                                    <p className={s.boxField}>БИК: {item.bik}</p>
+                                )}
+                                {item.swift && (
+                                    <p className={s.boxField}>
+                                        SWIFT БАНКА ПОЛУЧАТЕЛЯ: {item.swift}
+                                    </p>
+                                )}
+                                {item.inn && (
+                                    <p className={s.boxField}>ИНН {item.inn}</p>
+                                )}
+                                {item.okpo && (
+                                    <p className={s.boxField}>ОКПО {item.okpo}</p>
+                                )}
+                                {item.tax_office && (
+                                    <p className={s.boxField}>{item.tax_office}</p>
+                                )}
+                                {item.correspondent_bank && (
+                                    <>
+                                        <p className={s.boxField}>БАНК КОРРЕСПОНДЕНТ:</p>
+                                        <p className={s.boxField}>{item.correspondent_bank}</p>
+                                    </>
+                                )}
+                                {item.correspondent_swift && (
+                                    <p className={s.boxField}>
+                                        SWIFT BIC: {item.correspondent_swift}
+                                    </p>
+                                )}
+                                {item.correspondent_address && (
+                                    <p className={s.boxField}>
+                                        Address: {item.correspondent_address}
+                                    </p>
+                                )}
+                                {item.correspondent_account && (
+                                    <p className={s.boxField}>
+                                        Correspondent account of DemirBank: {item.correspondent_account}
+                                    </p>
+                                )}
                             </div>
                         </SwiperSlide>
                     ))}
@@ -85,8 +131,55 @@ const Requisite = () => {
                     {otherCities.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className={s.box}>
-                                <p className={s.boxTitle}>{item.currency}</p>
+                                <p className={s.boxTitle}>{item.currency_display || item.currency}</p>
                                 <h2 className={s.boxDescription}>{item.title}</h2>
+
+                                {item.bank_name && (
+                                    <p className={s.boxField}>{item.bank_name}</p>
+                                )}
+                                {item.account_number && (
+                                    <p className={s.boxField}>
+                                        Расчетный счет: {item.account_number}
+                                    </p>
+                                )}
+                                {item.bik && (
+                                    <p className={s.boxField}>БИК: {item.bik}</p>
+                                )}
+                                {item.swift && (
+                                    <p className={s.boxField}>
+                                        SWIFT БАНКА ПОЛУЧАТЕЛЯ: {item.swift}
+                                    </p>
+                                )}
+                                {item.inn && (
+                                    <p className={s.boxField}>ИНН: {item.inn}</p>
+                                )}
+                                {item.okpo && (
+                                    <p className={s.boxField}>ОКПО: {item.okpo}</p>
+                                )}
+                                {item.tax_office && (
+                                    <p className={s.boxField}>{item.tax_office}</p>
+                                )}
+                                {item.correspondent_bank && (
+                                    <>
+                                        <p className={s.boxField}>БАНК КОРРЕСПОНДЕНТ:</p>
+                                        <p className={s.boxField}>{item.correspondent_bank}</p>
+                                    </>
+                                )}
+                                {item.correspondent_swift && (
+                                    <p className={s.boxField}>
+                                        SWIFT BIC: {item.correspondent_swift}
+                                    </p>
+                                )}
+                                {item.correspondent_address && (
+                                    <p className={s.boxField}>
+                                        Address: {item.correspondent_address}
+                                    </p>
+                                )}
+                                {item.correspondent_account && (
+                                    <p className={s.boxField}>
+                                        Correspondent account of DemirBank: {item.correspondent_account}
+                                    </p>
+                                )}
                             </div>
                         </SwiperSlide>
                     ))}
@@ -95,18 +188,6 @@ const Requisite = () => {
 
             {/* QR code */}
             <p className={s.description}>{t('qrTransfer')}</p>
-            {/*<div className={s.qrBox}>*/}
-            {/*    <div className={s.qr}>*/}
-            {/*        <Image*/}
-            {/*            src={`/image/support/qr.jpg`}*/}
-            {/*            alt="QR code"*/}
-            {/*            fill*/}
-            {/*            objectFit="cover"*/}
-            {/*            blurDataURL={`/image/support/support-1.jpg`}*/}
-            {/*            className={s.img}*/}
-            {/*        />*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <div className={s.qrBox}>
                 {qrCodes.map((qr) => (
                     <div key={qr.id} className={s.qr}>

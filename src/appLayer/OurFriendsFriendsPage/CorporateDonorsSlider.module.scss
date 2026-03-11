@@ -1,0 +1,90 @@
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  color: #00AEEF;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 36px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.swiperWrap {
+  position: relative;
+  // Отступы по бокам чтобы стрелки не перекрывали карточки
+  padding: 0 52px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 8px !important;
+
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    color: #0E3862;
+    top: 40%; // По центру карточки
+
+    &::after {
+      font-size: 12px !important;
+      font-weight: 700;
+    }
+
+    &:hover { background: #f0f8ff; }
+  }
+
+  @media (max-width: 768px) {
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      display: none !important;
+    }
+  }
+}
+
+// Карточка — на всю ширину слайда, квадратная
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #C7EAFB;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.name {
+  color: #00AEEF;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+}
