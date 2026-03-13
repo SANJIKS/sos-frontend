@@ -33,6 +33,7 @@ const DonationForm = () => {
             setGlobalStages(2)
         }
     }
+
     const getDynamicContent = () => {
         let selectedAmount = '500'
 
@@ -54,7 +55,6 @@ const DonationForm = () => {
         const dynamicTexts = t.raw('dynamicTexts') as any
         const texts = dynamicTexts[selectedAmount] || dynamicTexts['500']
 
-        // Определяем иконки для каждого тарифа
         const icons = {
             '500': {
                 left: '/icons/donate/icons/payment-methods/choice-left.svg',
@@ -83,80 +83,80 @@ const DonationForm = () => {
     const dynamicContent = getDynamicContent()
 
     return (
-        <div className={s.donationForm}>
-            <h3 className={s.titleForm}>
-                {t('title')}
-            </h3>
-            <div className={s.margin}>
-                <div className={s.pading}>
-                    <div className={s.form}>
-                        <div className={s.title}>
-                            <h3>{t('subscription.title')}</h3>
-                            <p>{t('subscription.description')}</p>
-                        </div>
-                        <div className={s.inputs}>
-                            <input
-                                type="number"
-                                value={payment.sum || ''}
-                                placeholder={t('subscription.placeholder')}
-                                onChange={(e) => {
-                                    setPayment({...payment, sum: Number(e.target.value), type: 'monthly'})
-                                    setActiveTariff(null)
-                                }}/>
-                            <ul>
-                                {tariffs.map((tariff, index) => (
-                                    <li
-                                        key={index}
-                                        className={cn({[s.activeTariff]: activeTariff === index})}
-                                        onClick={() => {
-                                            handleTypeChange('monthly')
-                                            setActiveTariff(index)
-                                            handleSumClick(Number(tariff))
-                                        }}
-                                    >
-                                        {tariff} с
+        <div className={s.wrapper}>
+            <div className={s.donationForm}>
+                <h3 className={s.titleForm}>
+                    {t('title')}
+                </h3>
+                <div className={s.margin}>
+                    <div className={s.pading}>
+                        <div className={s.form}>
+                            <div className={s.title}>
+                                <h3>{t('subscription.title')}</h3>
+                                <p>{t('subscription.description')}</p>
+                            </div>
+                            <div className={s.inputs}>
+                                <input
+                                    type="number"
+                                    value={payment.sum || ''}
+                                    placeholder={t('subscription.placeholder')}
+                                    onChange={(e) => {
+                                        setPayment({...payment, sum: Number(e.target.value), type: 'monthly'})
+                                        setActiveTariff(null)
+                                    }}/>
+                                <ul>
+                                    {tariffs.map((tariff, index) => (
+                                        <li
+                                            key={index}
+                                            className={cn({[s.activeTariff]: activeTariff === index})}
+                                            onClick={() => {
+                                                handleTypeChange('monthly')
+                                                setActiveTariff(index)
+                                                handleSumClick(Number(tariff))
+                                            }}
+                                        >
+                                            {tariff} с
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div style={{display: 'flex', justifyContent: 'center', width: '100%', margin: '8px 0 4px'}}>
+                                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '6px'}}>
+                                    <h3 className={s.dynamicTitle} style={{fontWeight: 'bold', marginBottom: '4px', color: '#005587'}}>
+                                        {dynamicContent.texts.right.title}
+                                    </h3>
+                                    <div style={{display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center'}}>
+                                        <span>
+                                            <Image src={dynamicContent.icons.right} alt="choice" width={28} height={28}/>
+                                        </span>
+                                        <p className={s.dynamicText} style={{margin: 0, color: '#333'}}>
+                                            {dynamicContent.texts.right.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button className={s.btn} onClick={handleInputDonate}>{t('subscription.button')}</button>
+                            <ul className={s.paymentMethods}>
+                                {paymentMethods.map((method) => (
+                                    <li key={method} className={s[method]}>
+                                        <Image src={`/icons/donate/icons/payment-methods/${method}.svg`} alt={method}
+                                               width={70} height={70}/>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                       <div style={{ display: 'flex', justifyContent: 'center', width: '100%', margin: '30px 0' }}>
-                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                                <h3 className={s.dynamicTitle} style={{ fontWeight: 'bold', marginBottom: '15px', color: '#005587' }}>
-                                    {dynamicContent.texts.right.title}
-                                </h3>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', justifyContent: 'center' }}>
-                                    <span>
-                                        <Image src={dynamicContent.icons.right} alt="choice" width={36} height={36}/>
-                                    </span>
-                                    <p className={s.dynamicText} style={{ margin: 0, color: '#333' }}>
-                                        {dynamicContent.texts.right.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <button className={s.btn} onClick={handleInputDonate}>{t('subscription.button')}</button>
-                        <ul className={s.paymentMethods}>
-                            {paymentMethods.map((method) => (
-                                <li key={method} className={s[method]}>
-                                    <Image src={`/icons/donate/icons/payment-methods/${method}.svg`} alt={method}
-                                           width={70} height={70}/>
-                                </li>
-                            ))}
-                        </ul>
                     </div>
                 </div>
+
+                {globalStages === 2 && (
+                    <Stages2
+                        payment={payment} setPayment={setPayment} isAuthenticated={isAuthenticated}
+                        globalStages={globalStages} setGlobalStages={setGlobalStages} loading={loading}
+                        createPayment={createPayment}
+                        onClose={() => setGlobalStages(1)} setCaptchaToken={setCaptchaToken} captchaToken={captchaToken}
+                    />
+                )}
             </div>
-
-            {globalStages === 2 && (
-                <Stages2
-                    payment={payment} setPayment={setPayment} isAuthenticated={isAuthenticated}
-                    globalStages={globalStages} setGlobalStages={setGlobalStages} loading={loading}
-                    createPayment={createPayment}
-                    onClose={() => setGlobalStages(1)} setCaptchaToken={setCaptchaToken} captchaToken={captchaToken}
-                    // isSubcribe={true}
-                />
-            )}
-
         </div>
     )
 }

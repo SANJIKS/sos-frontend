@@ -18,7 +18,7 @@ export type News = {
 interface MainPageState {
     data: {
         faq: FAQ | null;
-        successStories: SuccessStory | null;
+        successStories: SuccessStory[] | null;
         news: News | null;
     };
     loading: boolean;
@@ -38,22 +38,25 @@ export const useMainPageStore = create<MainPageState>((set) => ({
     },
     loading: false,
     error: null,
-  fetchSuccessStories: async (locale = "ru") => {
+
+    fetchSuccessStories: async (locale = "ru") => {
         set({ loading: true, error: null });
         try {
             const searchParams = new URLSearchParams({ lang: locale, story_type: "success" });
-            const { data: response } = await $apiClient.get<SuccessStory>(
-                `/success-stories/stories/?${searchParams.toString()}`
-            );
+            const url = `/success-stories/stories/?${searchParams.toString()}`
+            console.log('Fetching stories:', url)
+            const { data: response } = await $apiClient.get<SuccessStory[]>(url);
+            console.log('Stories response:', response)
 
             if (response) {
                 set((state) => ({
-                    data: { ...state.data, successStories: response },
+                    data: { ...state.data, successStories: Array.isArray(response) ? response : [response] },
                 }));
             } else {
                 set({ error: "Ошибка при загрузке историй успеха" });
             }
-        } catch {
+        } catch (e) {
+            console.log('Stories error:', e)
             set({ error: "Ошибка при загрузке историй успеха" });
         } finally {
             set({ loading: false });
@@ -89,7 +92,6 @@ export const useMainPageStore = create<MainPageState>((set) => ({
             const { data: response } = await $apiClient.get<News>(
                 `/news/?${searchParams.toString()}`
             );
-
 
             if (response) {
                 set((state) => ({

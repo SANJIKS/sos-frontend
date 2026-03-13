@@ -1,71 +1,86 @@
+.wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-image: url('/image/form/formbg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px calc((100vw - 1240px) / 2) 60px 0;
+
+    @media (max-width: 1240px) {
+        padding: 40px 20px;
+        justify-content: center;
+    }
+}
+
 .donationForm {
     display: flex;
     flex-direction: column;
-    max-width: 1100px;
-    width: 75%;
-    margin: 0 auto;
-    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    gap: 12px;
 
     .titleForm {
         color: #00AEEF;
         text-align: center;
-        font-size: 28px;
+        font-size: 17px;
         font-style: normal;
         font-weight: 600;
-        line-height: 36px;
+        line-height: 22px;
     }
 
     .margin {
-        border-radius: 60px;
+        border-radius: 36px;
         background: #33BCF0;
         display: flex;
-        padding: 50px;
+        padding: 30px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 6px;
 
         .pading {
             display: flex;
-            padding: 50px;
+            padding: 30px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 10px;
-            border-radius: 60px;
+            gap: 6px;
+            border-radius: 36px;
             background: #C7EAFB;
 
             .form {
                 display: flex;
-                padding: 50px;
+                padding: 30px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
-                border-radius: 60px;
+                gap: 12px;
+                border-radius: 36px;
                 background: #FFF;
 
                 .title {
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 12px;
 
                     h3 {
                         color: #00AEEF;
                         text-align: center;
-                        font-size: 36px;
+                        font-size: 22px;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: 46px;
+                        line-height: 28px;
                     }
 
                     p {
                         color: #F04E69;
                         text-align: center;
-                        font-size: 20px;
+                        font-size: 12px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 32px;
+                        line-height: 19px;
                     }
                 }
             }
@@ -73,19 +88,19 @@
             .inputs {
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 18px;
 
                 input {
                     display: flex;
-                    padding: 20px 30px;
-                    border-radius: 20px;
+                    padding: 12px 18px;
+                    border-radius: 12px;
                     border: 2px solid #00AEEF;
                     background: #FFF;
                     color: #000;
-                    font-size: 20px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 32px;
+                    line-height: 19px;
                     outline: none;
 
                     &:focus {
@@ -97,25 +112,25 @@
                 ul {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 20px;
+                    gap: 12px;
                     text-align: center;
                     justify-content: center;
 
                     li {
                         display: flex;
                         align-items: center;
-                        gap: 14px;
-                        border-radius: 20px;
+                        gap: 8px;
+                        border-radius: 12px;
                         border: 2px solid #0E3862;
                         background: #FFF;
-                        padding: 10px 30px;
+                        padding: 6px 18px;
                         cursor: pointer;
                         color: #0E3862;
                         text-align: center;
-                        font-size: 28px;
+                        font-size: 17px;
                         font-style: normal;
                         font-weight: 600;
-                        line-height: 36px;
+                        line-height: 22px;
 
                         &:hover {
                             border: 2px solid #00AEEF;
@@ -134,202 +149,181 @@
             .choice {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 55px;
+                gap: 33px;
 
                 div {
                     display: flex;
                     flex-direction: column;
-                    gap: 14px;
+                    gap: 8px;
 
                     h3 {
-                        font-size: 22px;
+                        font-size: 13px;
                         font-style: normal;
                         font-weight: 600;
-                        line-height: 28px;
+                        line-height: 17px;
                     }
 
                     div {
                         display: flex;
-                        gap: 10px;
-                        border-radius: 20px;
+                        gap: 6px;
+                        border-radius: 12px;
                         flex-direction: row;
-                        padding: 10px 14px;
+                        padding: 6px 8px;
                         align-items: center;
-                        gap: 14px;
                         align-self: stretch;
 
                         span {
                             display: flex;
-                            padding: 14px;
+                            padding: 8px;
                             flex-direction: column;
                             justify-content: center;
-                            border-radius: 14px;
+                            border-radius: 8px;
                             background: #FFF;
                             align-items: center;
                         }
 
                         p {
-                            font-size: 18px;
+                            font-size: 11px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: 28px;
+                            line-height: 17px;
                         }
                     }
                 }
 
-                .left h3 {
-                    color: #00AEEF;
-                }
-
-                .left div {
-                    background: #C7EAFB;
-                }
-
-                .right h3 {
-                    color: #6BD770;
-                }
-
+                .left h3 { color: #00AEEF; }
+                .left div { background: #C7EAFB; }
+                .right h3 { color: #6BD770; }
                 .right div {
                     background: #6BD770;
-
-                    p {
-                        color: #FFF;
-                    }
+                    p { color: #FFF; }
                 }
             }
 
             .btn {
                 display: flex;
-                padding: 14px 30px;
+                padding: 8px 18px;
                 justify-content: center;
                 align-items: center;
                 align-self: stretch;
-                border-radius: 20px;
+                border-radius: 12px;
                 background: #00AEEF;
                 border: none;
                 color: #FFF;
                 text-align: center;
-                font-size: 28px;
+                font-size: 17px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: 36px;
-                margin-top: 10px;
+                line-height: 22px;
+                margin-top: 6px;
                 cursor: pointer;
             }
 
             .paymentMethods {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;
+                gap: 6px;
             }
         }
 
         // ── Tablet ──────────────────────────────────────────────
         @media screen and (max-width: 1100px) {
-            padding: 20px;
-            border-radius: 30px;
+            padding: 12px;
+            border-radius: 18px;
 
             .pading {
-                padding: 20px;
-                border-radius: 40px;
+                padding: 12px;
+                border-radius: 24px;
 
                 .form {
-                    padding: 20px;
-                    border-radius: 20px;
+                    padding: 12px;
+                    border-radius: 12px;
                 }
             }
         }
 
         // ── Mobile ──────────────────────────────────────────────
         @media screen and (max-width: 880px) {
-            padding: 14px;
-            border-radius: 28px;
+            padding: 8px;
+            border-radius: 17px;
             background: #33BCF0;
 
             .pading {
-                padding: 12px;
-                border-radius: 22px;
+                padding: 7px;
+                border-radius: 13px;
                 background: #C7EAFB;
 
                 .form {
-                    padding: 16px;
-                    border-radius: 18px;
+                    padding: 10px;
+                    border-radius: 11px;
                     background: #FFF;
-                    gap: 12px;
+                    gap: 7px;
 
                     .title {
-                        gap: 8px;
+                        gap: 5px;
 
                         h3 {
-                            font-size: 16px;
+                            font-size: 13px;
                             font-weight: 700;
-                            line-height: 22px;
+                            line-height: 18px;
                         }
 
                         p {
+                            font-size: 11px;
+                            font-weight: 400;
+                            line-height: 16px;
+                        }
+                    }
+                }
+
+                .inputs {
+                    gap: 7px;
+                    width: 100%;
+
+                    input {
+                        padding: 8px 12px;
+                        border-radius: 8px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                    }
+
+                    ul {
+                        gap: 6px;
+
+                        li {
+                            padding: 5px 12px;
                             font-size: 13px;
-                            font-weight: 400;
-                            line-height: 20px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            border-radius: 8px;
                         }
-                    }
 
-                    .inputs {
-                        gap: 12px;
-                        width: 100%;
-
-                        input {
-                            height: 40px;
-                            padding: 8px 14px;
-                            border-radius: 12px;
+                        .activeTariff {
                             border: 2px solid #00AEEF;
+                            color: #00AEEF;
                             background: #FFF;
-                            color: #000;
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 20px;
-                            outline: none;
-                            text-align: left;
-                        }
-
-                        ul {
-                            gap: 10px;
-
-                            li {
-                                padding: 6px 16px;
-                                font-size: 16px;
-                                font-weight: 600;
-                                line-height: 22px;
-                                border-radius: 12px;
-                                border: 2px solid #0E3862;
-                                background: #FFF;
-                            }
-
-                            .activeTariff {
-                                border: 2px solid #00AEEF;
-                                color: #00AEEF;
-                                background: #FFF;
-                            }
                         }
                     }
+                }
 
-                    .btn {
-                        padding: 10px 16px;
-                        border-radius: 12px;
-                        font-size: 15px;
-                        font-weight: 700;
-                        line-height: 20px;
-                        margin-top: 4px;
-                    }
+                .btn {
+                    padding: 8px 12px;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    margin-top: 4px;
+                }
 
-                    .paymentMethods {
-                        width: 100%;
-                        justify-content: space-between;
-                        margin-top: 8px;
+                .paymentMethods {
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 5px;
 
-                        img {
-                            width: auto !important;
-                            height: 36px !important;
-                        }
+                    img {
+                        width: auto !important;
+                        height: 24px !important;
                     }
                 }
             }
@@ -338,27 +332,27 @@
 
     @media screen and (max-width: 880px) {
         width: 90%;
-        gap: 14px;
+        gap: 8px;
 
         .titleForm {
             color: #F04E69;
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 500;
-            line-height: 20px;
+            line-height: 18px;
         }
     }
 }
 
 .dynamicTitle {
-    font-size: 36px;
+    font-size: 22px;
     @media (max-width: 880px) {
-        font-size: 20px;
+        font-size: 13px;
     }
 }
 
 .dynamicText {
-    font-size: 30px;
+    font-size: 18px;
     @media (max-width: 880px) {
-        font-size: 16px;
+        font-size: 12px;
     }
 }

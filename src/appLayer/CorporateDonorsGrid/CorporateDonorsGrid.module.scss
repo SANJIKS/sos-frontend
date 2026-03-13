@@ -21,25 +21,29 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
   }
 
   @media (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 }
 
 .card {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 32px;
+  aspect-ratio: 3 / 2;
+  border-radius: 16px;
   overflow: hidden;
   border: 2px solid #C7EAFB;
   background: #fff;
