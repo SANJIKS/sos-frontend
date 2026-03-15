@@ -70,7 +70,7 @@ const SuccessStories = ({ stories }: { stories: SuccessStory[] }) => {
             </div>
 
 
-            <Link href={'/our-friends/friends'} className={s.button}>
+            <Link href={'/success-stories'} className={s.button}>
                 <button>{t('button')}</button>
             </Link>
         </div>
